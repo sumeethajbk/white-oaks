@@ -6,8 +6,21 @@
 .footer h6{color: var(--theme); font-size: 12px; font-weight: 700; line-height: 100%; margin-bottom: 10px;}
 .footer-tp-wrap p{font-size: 16px; font-weight: 400; line-height: 150%; margin-bottom: 0;}
 
-.ft-app-link {background: var(--white); color: var(--black); border-radius: 42px; padding: 20px; flex: 1;}
+.app-download{margin-bottom: 30px;}
+.ft-app-wrap{gap: 10px;}
+.ft-app-link:first-child{gap: 15px;}
+.ft-app-link {background: var(--white); color: var(--black); border-radius: 42px; padding: 10px 20px; flex: 1; gap: 10px}
 .ft-app-link .ft-app-lt img{width: 22px; height: 26px;}
 .ft-app-link .ft-app-rt img{width: 22px; height: 26px;}
+.ft-app-txt{flex: 1;}
+.ft-app-txt span{display: block;}
 .ft-tp-txt{ font-size: 10px; line-height: 120%; font-weight: 700;}
 .ft-bt-txt{font-size: 17px; line-height: 100%; font-weight: 700;}
+
+.follow-links ul{margin: 0;}
+.flw-links li{display: inline-block; margin:  0 0 0 16px;}
+.flw-links li:first-child{margin-left: 0;}
+.flw-links li a{ font-size: 1.25rem; color: var(--black); width: 40px; height: 40px; position: relative; z-index: 1; line-height: 1; border-radius: 50%; background-color: var(--white);}
+.flw-links li a:hover{background-color: var(--theme); color: var(--white);}
+
+.footer-top hr{margin: 60px 0 40px;}
