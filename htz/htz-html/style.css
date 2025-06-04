@@ -19,33 +19,32 @@ Text Domain:Whiteoaks
 
 
 /*-- customized styles starts here --*/
-body {font-family: "Inter", sans-serif; color:var(--white); font-size:1.25rem; line-height:1.4; font-weight:normal; font-style:normal; overflow-x:hidden; background:var(--black); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch;}
+body {font-family: "Inter", sans-serif; color:var(--white); font-size:1.125rem; line-height:1.5; font-weight:400; font-optical-sizing: none; font-style:normal; overflow-x:hidden; background:var(--black); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch;}
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
-#mainContent {clear:both; position:relative; float:left; width:100%; padding: 80px 0 0 0;}
+#mainContent {clear:both; position:relative; float:left; width:100%; padding: 82px 0 0 0;}
 .container {max-width:1280px; margin:0 auto; width:100%;}
 .container-md {max-width:1152px; margin:0 auto; width:100%;}
-.container-sm {max-width:960px; margin:0 auto; width:100%;}
+.container-sm {max-width:900px; margin:0 auto; width:100%;}
 .btn {display:block;}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--anchor); text-decoration: none;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--heading);}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-weight: 700; font-family: "Inter", sans-serif; display: block;}
+.h1 {font-size: 3.5rem; line-height:  133.929%; margin-bottom: 7px; letter-spacing: -1.12px;}
+.h2 {font-size: 3rem; line-height: 150%; margin-bottom: 18px; letter-spacing: 0.96px;}
+.h3 {font-size: 2.5rem; line-height: 120%; margin-bottom: 18px; letter-spacing: -0.8px;}
+.h4 {font-size: 2rem; line-height: 125%; margin-bottom: 19px; letter-spacing: -0.64px;}
+.h5 {font-size: 1.5rem; line-height: 116%; margin-bottom:18px; letter-spacing: -0.48px;}
+.h6 {font-size: 1.25rem; line-height: 130%; margin-bottom: 18px; letter-spacing: -0.4px;}
 
 section p a, section li a {text-decoration: underline; font-weight: bold;}
 section ol:last-child, section ul:last-child {margin-bottom: 0;}
 
-/* search */
-.searchwp-live-search-results {min-height: 0!important}
-.searchwp-live-search-results-showing{ position: relative; border-radius: 0 0 16px 16px!important; padding: 24px 24px 24px!important; background-color: var(--input)!important; margin-top: -5px!important; box-shadow: none!important;}
-.searchwp-live-search-result p { font-size: 0.875rem!important; border-bottom: none!important; font-weight: bold!important; padding:0 0 21px!important;}
-.searchwp-live-search-result p:last-child{margin-bottom: 0;}
-.searchwp-live-search-result p a{color: var(--blacktext);}
-.searchwp-live-search-result p a:hover{color: var(--green);}
-.hdrsearch-form.input-has-value input{ border-radius: 16px 16px 0 0;}
-.searchwp-live-search-no-results {padding: 0!important;}
-.searchwp-live-search-no-min-chars::after {padding: 2rem 0 2rem!important;}
-
-
-
 
 /* Banner Bg */
 .banner-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1;}
+.banner-bg:after {background: linear-gradient(260deg, rgba(0, 0, 0, 0.00) 51.58%, #000 89.24%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%); content: ""; width: 100%; height:100%; position: absolute; left: 0; top: 0; display: block;}
 .banner-bg img {width:100%; height:100%; font-family:"object-fit:cover"; object-fit:cover; -o-object-fit:cover; object-position:0 0; -o-object-position:0 0;}
 
 /* Background Bg */
@@ -251,7 +250,7 @@ body .glsr-star.glsr-star-half{ background-image: url('images/star-half.svg') !i
 
 
 
-.optional-text {font-size:1.125rem; color:var(--optionaltxt); font-weight:bold; margin:0 0 25px 0; display:block;}
+.optional-text {font-size: 0.75rem; color:var(--optionaltxt); font-weight:bold; margin:0 0 10px 0; display:block; line-height: 1;}
 .btn-wrap {width:100%; clear:both;}
 
 
