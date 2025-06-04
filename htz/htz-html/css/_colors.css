@@ -1,0 +1,33 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+	--white-15: rgb(255 255 255 / 15%);
+    --white-20: rgb(255 255 255 / 20%);
+    --white-50: rgb(255 255 255 / 50%);
+    --white-75: rgb(255 255 255 / 75%);
+    --white-75: rgb(255 255 255 / 80%);
+    --body-text: #ffffff;
+	--heading: #ffffff; 
+    --optionaltxt: #f50000;
+    --powder-blue:#94CFDB;
+    --anchor: #ffffff;
+    --anchor-hover: #f50000;
+    --play-bg: #D9D9D9;
+    --ad: rgb(145 145 145 / 40%);
+    --bill-ad: #272727;
+    --theme : #f50000;
+    --btn-txt : #000000;
+    --btn-txt-hover : #ffffff;
+    
+    --btn-bg : #ffffff;
+    --btn-bg-hover: #f50000;
+
+    --fm-btn-txt : #ffffff;
+    --fm-btn-bg :  #f50000;
+
+    --fm-btnbg-hover : #ffffff;
+
+    --placeholder: #ffffff;
+    --readmore : #ffffff;
+    --readmore-hover: #f50000; 
+}
