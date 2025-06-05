@@ -49,10 +49,25 @@
     ul.main_menu > li.current-menu-item > a, 
     ul.main_menu > li.current-menu-parent > a, 
     ul.main_menu > li.current-page-ancestor > a, 
-    ul.main_menu > li.current_page_item > a{color: var(--theme);}
+    ul.main_menu > li.current_page_item > a{color: var(--theme) ;
+    }
     
-    
+    ul.main_menu > li.current-menu-item > a:after, 
+    ul.main_menu > li.current-menu-parent > a:after, 
+    ul.main_menu > li.current-page-ancestor > a:after, 
+    ul.main_menu > li.current_page_item > a:after{bottom: 0; padding: 0 8px; height: 6px;}
 
+        ul.main_menu > li.current-menu-item > a:before, 
+    ul.main_menu > li.current-menu-parent > a:before, 
+    ul.main_menu > li.current-page-ancestor > a:before, 
+    ul.main_menu > li.current_page_item > a:before{background-color: var(--menu-bg); padding: 14px 8px 30px; content: '';
+    position: absolute;
+    display: block;
+    margin: auto;
+    height: 2px;
+    transition: width .5s ease, background-color .5s ease;
+    left: 50%;
+    transform: translate(-50%, 0); width: 100%; z-index: -1; top: -18px; height: 34px }
 }
 
 
