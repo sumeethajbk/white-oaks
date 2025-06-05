@@ -139,11 +139,10 @@ body .mfp-close:after {display: none;}
 
 
 /* Default Slick navigations */
-.slick-arrow{top:0; left: 0; right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; width: 20px; height: 20px;bottom: 0; margin: auto; border-top: 3px solid var(--white); border-left: 3px solid var(--white); opacity: 0.75;}
+.slick-arrow{top:0; left: 0; right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; bottom: 0; margin: auto; width: 50px; height: 50px; background-color: var(--theme); border-radius: 50%; font-size: 20px;}
 .slick-arrow:hover {border-color: var(--text-violetblue);}
-.slick-arrow:before {display: block; height: 200%; width: 200%; margin-left: -50%; margin-top: -50%; content: ""; transform: rotate(46.5deg);}
-.slick-arrow.prev-arrow {right: auto; left: 0; transform: rotate(-46deg);}
-.slick-arrow.next-arrow {right: 0; left: auto;  transform: rotate(135deg);}
+.slick-arrow.slick-prev{right: auto; left: 0; }
+.slick-arrow.slick-next{right: 0; left: auto; }
 .slick-arrow.slick-disabled {pointer-events:none; border-color: rgba(0, 0, 0, 0.2);}
 
 
@@ -389,7 +388,7 @@ ul.follow-icons li:hover a{color: var(--limegreen);}
     body .ui-tabs .ui-tabs-nav li.dropdown-li:hover ul {display: block; opacity: 1; visibility: visible;}
 }
 @media only screen and (max-width:1400px) {
-    .container {padding:0 40px; max-width:100%;}
+    .container {padding:0 20px; max-width:100%;}
 }
 
 
