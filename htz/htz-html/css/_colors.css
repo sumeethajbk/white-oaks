@@ -38,6 +38,15 @@
     --ul-bullets:#ffffff;
 
     --slick-arrow: #ffffff;
+<<<<<<< HEAD
+    --menu-bg: #f7f5f0;
     
+=======
+    
+<<<<<<< HEAD
     --seperator-line: rgba(255 255 255 / 0.1)
+=======
+    --seperator-line: rgba(255, 255, 255 / 1%)
+>>>>>>> 6a03207afcc06b5b064dc02bae82765916af677a
+>>>>>>> 6e9068702b6d89b9b5b885ff791dd72de6b052de
 }
