@@ -21,7 +21,8 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    .repeater-main {gap:40px;}
+    .repeater-main {gap:40px; padding: 40px 0;}
     .repeater-img {height: 66.67vw;  margin-bottom: 15px;}
-
+    .repeater-text .h4 {margin-bottom: 16px;}
+    .repeater-text .optional-text {margin: 0 0 4px 0;}
 }

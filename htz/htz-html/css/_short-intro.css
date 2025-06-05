@@ -1,0 +1,26 @@
+.short-intro-module{ clear: both; width: 100%; z-index: 1; padding: 40px 0; position: relative;}
+.short-intro-module .short-intro-main {max-width:846px; margin: 0 auto; text-align: center;}
+.short-intro-module .short-intro-main h2 {letter-spacing: -0.6px; margin-bottom: 20px;}
+.short-intro-module .short-intro-main h2 span:before {bottom: -13px; left: -11px;}
+
+/* media starts here */
+@media only screen and (min-width: 1200px) {
+  
+}
+@media only screen and (min-width: 1024px) {
+   
+    
+}
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+   
+
+    
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+   
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+   
+
+}
