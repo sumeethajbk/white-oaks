@@ -7,7 +7,7 @@ a:focus {outline: 0;}
 a:hover, a:active {outline: 0;}
 a:hover {color: var(--anchor-hover);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-weight: 700; font-family: "Inter", sans-serif; }
-h1 {font-size: 3.5rem; line-height:  133.929%; margin-bottom: 7px; letter-spacing: -1.12px;}
+h1 {font-size: 3.5rem; line-height:  1.34; margin-bottom: 7px; letter-spacing: -1.12px;}
 h2 {font-size: 3rem; line-height: 150%; margin-bottom: 18px; letter-spacing: 0.96px;}
 h3 {font-size: 2.5rem; line-height: 120%; margin-bottom: 18px; letter-spacing: -0.8px;}
 h4 {font-size: 2rem; line-height: 125%; margin-bottom: 19px; letter-spacing: -0.64px;}
@@ -36,7 +36,7 @@ dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
 ul {list-style: none; margin:0 0 28px 28px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 8px;}
-ul > li:before {content: ""; width: 11px; height: 11px; display: block; position: absolute; top:8px; left: -20px; background-color: var(--base-foreground); border-radius: 50%;}
+ul > li:before {content: ""; width:6px; height:6px; display: block; position: absolute; top:8px; left: -20px; background-color: var(--ul-bullets); border-radius: 50%;}
 li > ul {margin: 25px 0 26px 40px;}
 ol {counter-reset: section; list-style: none; margin:0 0 28px 27px;}
 ol > li {counter-increment: li; position: relative; margin-bottom:8px;}
@@ -95,8 +95,8 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;} 
 
 /* Default */
-button, .button  {display: inline-block; font-size:1rem; font-weight: bold; line-height: 150%; padding:16px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--btn-bg); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--btn-txt); font-family: "Inter", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 0; outline: 0; box-sizing: border-box;}
-button:hover, .button:hover {color: var(--btn-txt-hover); background-color: var(--btn-bg-hover); transform: translate(4px, -4px); }
+button, .button  {display: inline-block; font-size: 0.938rem; font-weight: 800; line-height: 1.6; letter-spacing: -0.15px; padding:8px 20px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--btn-bg); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--btn-txt); font-family: "Inter", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 30px; outline: 0; box-sizing: border-box;}
+button:hover, .button:hover {color: var(--btn-txt-hover); background-color: var(--btn-bg-hover);}
 /* button:focus, .button:focus, button:active, .button:active {background-color: var(--base-foreground); color: var(--white);} */
 
 

@@ -4,20 +4,14 @@
 
 .default-banner-main .default-banner-text h1 span {position: relative;}
 .default-banner-main .default-banner-text h1 span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -7px; bottom:3px; background:url("../images/accent-line.svg") 0 0 no-repeat; z-index: -1;}
-.default-banner-main .default-banner-text .optional-text {}
 
 
 
 /*-- media starts here --*/
-@media only screen and (max-width: 1023px) and (min-width: 200px){
-    
-}
-
-@media only screen and (max-width: 1023px) and (min-width:768px){
-}
-
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    
-    
+    .default-banner-main {align-items: flex-end;}
+    .default-banner-main .default-banner-text {padding: 40px 0 80px; font-size: 1rem;} 
+    .default-banner-main .default-banner-text h1 span:before {bottom: -3px;}
+    .default-banner-main .default-banner-text p {font-size: 1rem; line-height: 1.5;}
 
 }

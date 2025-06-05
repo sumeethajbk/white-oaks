@@ -1,5 +1,5 @@
 @import url("_default-banner.css");
-
+@import url("_repeater-section.css");
 
 .general-default-article-section {float: left; width: 100%; padding:79px 0 81px 0; background: var(--white); position: relative; z-index: 1;}
 .general-default-article-section .default-inner {position: relative;}
