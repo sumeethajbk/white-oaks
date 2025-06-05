@@ -98,9 +98,12 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 button, .button  {display: inline-flex; font-size: 0.938rem; font-weight: 800; line-height: 1.6; letter-spacing: -0.15px; padding:9px 25px 11px 20px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--btn-bg); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--btn-txt); font-family: "Inter", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 30px; outline: 0; box-sizing: border-box; gap:14px; align-items: center; justify-content: center;}
 .button:after {content: "\e09f"; position: relative; display: inline-block; font-size:19px; font-family: "Font Awesome 6 Sharp"; font-weight: normal; line-height: 1.6;}
 button:hover, .button:hover {color: var(--btn-txt-hover); background-color: var(--btn-bg-hover);}
-.button:hover:after {animation: bounceAlpha 1.8s ease-in-out infinite;}
+.button:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
 button:focus, .button:focus, button:active, .button:active {background-color: var(--btn-bg); color: var(--btn-txt);} 
 
+
+.button.normal-btn {padding: 10px 32px;  letter-spacing: -0.16px; line-height: 1.5; font-weight: 700; font-size: 1rem;}
+.button.normal-btn:after {display: none;}
 
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width: 24px; height: 24px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1;}
 
