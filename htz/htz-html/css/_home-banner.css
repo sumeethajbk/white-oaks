@@ -1,0 +1,11 @@
+.home-banner-slide-main{ flex-wrap: nowrap; position: relative; }
+
+.home-banner-thumb{width: 298px;}
+.home-banner-slide-info{padding: 24px; bottom:0; left: 0;}
+.home-banner-slide-info svg{margin-bottom: 12px;}
+.home-banner-slide-info .h6{margin-bottom: 0;}
+
+.home-banner-thumb:first-child{ background: rgba(0, 0, 0, 0.6);}
+.home-banner-slide-main .slick-list{margin-left: -148px; width: calc(100% + 148px)}
+.home-banner-slide-main .slick-track{display: flex; gap: 20px}
+.home-banner-slide.slick-slide{flex: 0 0 298px;}
