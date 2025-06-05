@@ -34,8 +34,11 @@
 .footer-cp-rights .privacy-links ul li { font-size: 0.75rem; margin: 0; display: inline-block; }
 
 /* footer bottom */
+.footer-bottom{justify-content: space-between;}
 .ft-btm-left{flex:0 0 394px;  gap: 20px}
 .ft-btm-txt{gap: 10px; margin-bottom: 8px;}
 .ft-btm-txt span{font-size: 12px; line-height: 100%;}
-.ft-btm-rt-con h6{font-size: 1.5rem; line-height: 116%; letter-spacing: -0.48px;}
+.ft-btm-rt-con h6{font-size: 1.5rem; line-height: 116%; letter-spacing: -0.48px; margin-bottom: 0;}
 .ft-btm-lt-img{width: 80px; height: 80px;}
+.ft-btm-rt-thumb{width: 80px; height: 80px;}
+.ft-btm-right{flex: 0 0 380px;}
