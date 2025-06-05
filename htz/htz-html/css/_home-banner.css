@@ -9,3 +9,30 @@
 .home-banner-slide-main .slick-list{margin-left: -148px; width: calc(100% + 148px)}
 .home-banner-slide-main .slick-track{display: flex; gap: 20px}
 .home-banner-slide.slick-slide{flex: 0 0 298px;}
+
+.home-banner-slide-main:before, .home-banner-slide-main:after{
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -80px;
+  z-index: 1;
+  width: 130px;
+  height: 100%;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.home-banner-slide-main:after{left: auto; right: -80px; background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .home-banner-slide-main .slick-list { margin-left: -105px; width: calc(100% + 105px); }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.home-banner-slide-main .slick-list {
+  margin-left: inherit;
+  width: 100%;
+}
+
+}
