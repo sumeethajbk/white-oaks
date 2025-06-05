@@ -59,7 +59,7 @@ section ol:last-child, section ul:last-child {margin-bottom: 0;}
 .divider-module {clear: both; width: 100%; position: relative; z-index: 1;}
 .divider {display: flex; align-items: center; justify-content: center;}
 .line {flex: 1; height: 1px; background:var(--seperator-line);}
-.icon {margin: 0 15px; display: flex; gap: 4px;}
+.icon {margin: 0 50px 0 50px; display: flex; width:50px; height:50px;}
 
 
 
@@ -152,7 +152,7 @@ body .mfp-close:after {display: none;}
 .slick-arrow:hover{opacity: 0.7}
 .slick-arrow.slick-prev{right: auto; left: 0; }
 .slick-arrow.slick-next{right: 0; left: auto; }
-.slick-arrow.slick-disabled {pointer-events:none;}
+.slick-arrow.slick-disabled {pointer-events:none; filter: grayscale(100%)}
 
 
 ul.slick-dots {margin:0; padding-top:31px; padding-bottom: 15px; display:flex; justify-content:center; flex-wrap:wrap; width: 100%;}
