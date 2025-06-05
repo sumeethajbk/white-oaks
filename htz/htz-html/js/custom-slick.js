@@ -40,6 +40,7 @@ jQuery(document).ready(function () {
           autoplaySpeed: 0,
           centerMode: true,
           cssEase: 'linear',
+          centerMode: true,
       });
     }
   }
