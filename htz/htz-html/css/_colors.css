@@ -1,12 +1,11 @@
 :root {
     --black: #000000;
-    --black-20: rgba(0 0 0 / 20%);
     --white: #ffffff;
 	--white-15: rgb(255 255 255 / 15%);
     --white-20: rgb(255 255 255 / 20%);
     --white-50: rgb(255 255 255 / 50%);
     --white-75: rgb(255 255 255 / 75%);
-    --white-75: rgb(255 255 255 / 80%);
+    --white-80: rgb(255 255 255 / 80%);
     --body-text: #ffffff;
 	--heading: #ffffff; 
     --optionaltxt: #f50000;
@@ -31,4 +30,10 @@
     --placeholder: #ffffff;
     --readmore : #ffffff;
     --readmore-hover: #f50000; 
+    
+   
+    --banner-shadow: rgba(0, 0, 0, 0.00);
+     --banner-shadow-20: rgba(0 0 0 / 20%);
+     --banner-shadow-100: #000000;
+    --ul-bullets:#ffffff;
 }
