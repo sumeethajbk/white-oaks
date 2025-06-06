@@ -8,6 +8,7 @@
 .fce-post .fce-thumb:before {content: ""; width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: block; background: linear-gradient(252deg, var(--banner-shadow) 51.58%, var(--banner-shadow-100) 89.24%);}
 
 .fce-txt {position: relative; z-index: 1; padding:64px; color: var(--white); margin-top: auto; max-width:500px;}
+.fce-txt .cat-wrap ul li {text-transform: uppercase;}
 .fce-txt h2 {margin-bottom: 16px; font-size: 2.5rem; letter-spacing: -0.58px;}
 .fce-txt h2 span:before {left: -26px; bottom: -9px;}
 .fce-txt .h6:last-child {margin-bottom: 0;}

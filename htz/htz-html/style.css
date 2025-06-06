@@ -44,7 +44,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 .h2 {font-size: 2.375rem; line-height:1.18; margin-bottom: 18px; letter-spacing: -0.76px;}
 .h3 {font-size: 2.5rem; line-height: 1.2; margin-bottom: 18px; letter-spacing: -0.8px;}
 .h4 {font-size: 2rem; line-height: 1.25; margin-bottom: 19px; letter-spacing: -0.64px;}
-.h5 {font-size: 1.5rem; line-height: 116%; margin-bottom:18px; letter-spacing: -0.48px;}
+.h5 {font-size: 1.5rem; line-height: 1.17; margin-bottom:16px; letter-spacing: -0.48px;}
 .h6 {font-size: 1.25rem; line-height: 130%; margin-bottom: 18px; letter-spacing: -0.4px;}
 
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h2 span, .h4 span {position: relative; display: inline-block;}
@@ -118,7 +118,7 @@ body .mfp-close:after {display: none;}
 /* Cat Wrap */
 .cat-wrap {clear: both; margin: 0 0 17px 0; justify-content: space-between; display: flex; flex-wrap: wrap; width: 100%;}
 .cat-wrap ul {margin: 0; font-size: 0; display: flex; flex-wrap: wrap; gap:8px;}
-.cat-wrap ul li {margin: 0; display: inline-block; text-transform: uppercase;}
+.cat-wrap ul li {margin: 0; display: inline-block;}
 .cat-wrap ul li:before {display: none;}
 .cat-wrap ul li a {display: inline-block; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg);}
 .cat-wrap ul li a:hover {color: var(--cat-txt-hover);}
