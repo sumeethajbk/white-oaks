@@ -4,18 +4,6 @@
 .short-intro-module .short-intro-main h2 span:before {bottom: -13px; left: -11px;}
 
 /* media starts here */
-@media only screen and (min-width: 1200px) {
-  
-}
-@media only screen and (min-width: 1024px) {
-   
-    
-}
-@media only screen and (max-width: 1199px) and (min-width: 1024px){
-   
-
-    
-}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
    
 
