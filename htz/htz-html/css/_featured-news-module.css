@@ -1,0 +1,52 @@
+.featured-news-module{position: relative; clear: both; width: 100%;}
+.fn-main {width: 100%; padding:64px 0 78px 0; clear: both;}
+.fn-bg {bottom: 0; left: 0; display:block; width: 100%; height: 67.9%; background: var(--white);}
+.fn-lists {clear: both; font-size: 0; width: 100%; position: relative;}
+.fn-grid {display: inline-block; width:22.65625%; vertical-align: top; margin: 39px 0 0 3.125%;}
+.fn-grid:nth-child(4n+1) {margin-left: 0;}
+.fn-grid .fn-thumb {margin: 0 0 23px 0; clear: both; width: 100%; position: relative;}
+.fn-grid .fn-thumb a:after {background-color: rgba(157, 151, 154, 0.2); content: ""; width: 100%; height: 100%; top: 0; left: 0; position: absolute; display:block;}
+.fn-grid .fn-cnt {clear: both; width: 100%;}
+.fn-grid .fn-cnt p {font-size: 20px; font-weight: 500; line-height: 150%; color: var(--linkhover);}
+.fn-grid .fn-cnt p a {color: var(--linkhover);}
+.fn-grid .fn-cnt p a:hover {color: var(--teal);}
+.fn-grid .tag {display: inline-block; color: var(--teal); font-size: 16px; font-weight: 500; font-family: 'Oswald', sans-serif;border-bottom: 2px solid rgba(0, 131, 139, 0.25); line-height: 125%; margin: 0 15px 5px 0; width: auto;}
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1280px) and (min-width:1024px){
+}
+
+@media only screen and (min-width:1024px){
+    .fn-main .heading {padding-bottom: 0;}
+    
+}
+
+@media only screen and (min-width:768px) {}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+   
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .fn-main {padding:64px 0 56px 0;}
+    .fn-grid {width: 47.093023255813954%; margin: 40px 0 0 40px;}
+    .fn-grid:nth-child(2n+1) {margin-left: 0;}
+    .fn-grid:nth-child(1), .fn-grid:nth-child(2) {margin-top: 0;}
+    .fn-bg {height: 77.9%;}
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .fn-main {padding: 39px 0 40px;}
+    .fn-main .heading-btn {margin-top: 40px;}
+    .fn-grid {width: 342px; margin: 0 24px 0 0;}
+    .fn-grid .fn-cnt {margin-bottom: 30px;}
+    .fn-lists {padding: 0 0 65px 0;}
+    .fn-lists ul.slick-dots {min-height: 72px; width: calc(100% - 151px); margin: 0 auto; position: absolute; left: 0; right: 0; bottom: -8px;}
+    .fn-lists .slick-arrow {top: inherit; bottom: 0;}
+}
+
+
+@media only screen and (max-width: 389px) {}
