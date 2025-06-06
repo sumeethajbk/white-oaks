@@ -3,6 +3,7 @@
 @import url("_repeater-section.css");
 @import url("_cta-module.css");
 @import url("_fce-module.css");
+@import url("_signup-module.css");
 
 .short-intro-module {padding-bottom: 20px;}
 .repeater-main{padding: 40px 0 80px 0;}

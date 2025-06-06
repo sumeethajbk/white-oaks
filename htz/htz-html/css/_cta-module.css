@@ -1,7 +1,8 @@
-.cta-module {width: 100%; z-index: 1; position: relative; clear: both;}
+.cta-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden;}
+.cta-module .brand_asset {right: 0; bottom: -59px;}
 .cta-main {margin: 0 auto; width: 100%; min-height: 429px; align-items:center;}
 .cta-main .h2 {margin-bottom: 16px;}
-.cta-main .h2 span:before {left: -18px; bottom: -7px;}
+.cta-main .h2 span:before {left: -18px; bottom: -59px;}
 
 .cta-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1;}
 .cta-bg:after {background: linear-gradient(270deg, var(--cta-shadow) 8.37%, var(--cta-shadow-100) 70.49%); content: ""; width: 100%; height:100%; position: absolute; left: 0; top: 0; display: block;}
