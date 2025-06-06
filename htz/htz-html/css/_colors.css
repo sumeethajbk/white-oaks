@@ -22,11 +22,12 @@
     --btn-bg : #ffffff;
     --btn-bg-hover: #f50000;
 
-    --fm-btn-txt : #ffffff;
-    --fm-btn-bg :  #f50000;
-    --fm-btnbg-hover : #ffffff;
-
-    --placeholder: #ffffff;
+    --signup-btn-txt: #000000;
+    --signup-btn-bg :  #f50000;
+    --signup-btnbg-hover : #000000;
+    --signup-btnbg-hover-txt: #ffffff;
+    
+    --placeholder: #000000;
     --readmore : #ffffff;
     --readmore-hover: #f50000; 
     
@@ -42,5 +43,11 @@
         
     --cta-shadow: rgba(0, 0, 0, 0.00);
     --cta-shadow-100: #000000;
+    
+    --cat-txt:#f50000;
+    --cat-txt-hover:#ffffff;
+    --cat-bg:rgba(245, 0, 0, 0.2);
+    
+    --grey:#151515;
 
 }
