@@ -5,7 +5,7 @@
 .footer-location{flex:0 0 218px;}
 .footer-phone{flex: 0 0 393px;}
 .footer-tp-rt{flex: 0 0 350px;}
-.footer-top h6{color: var(--optional-text); font-size: 12px; font-weight: 700; line-height: 100%; margin-bottom: 10px;}
+.footer-top h6{color: var(--optionaltxt); font-size: 12px; font-weight: 700; line-height: 100%; margin-bottom: 10px;}
 .footer-tp-wrap p{font-size: 16px; font-weight: 400; line-height: 150%; margin-bottom: 0;}
 
 .app-download{margin-bottom: 30px;}
