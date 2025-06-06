@@ -57,8 +57,9 @@ jQuery(document).ready(function () {
 /* End of logo slider */
     
 /* Testimonial Slider */
-    jQuery(".home-banner-slide-main").slick({
-      slidesToShow: 3,
+jQuery(".home-banner-slide-main").slick({
+  
+  slidesToShow:1,
       slidesToScroll: 1,
       draggable: true,
       swipeToSlide: true,
@@ -72,5 +73,18 @@ jQuery(document).ready(function () {
       variableWidth:true,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+ responsive: [
+      {
+        breakpoint: 413,
+        settings: {
+  slidesToShow:1,
+
+          centerMode: true,
+      // variableWidth:false,
+      
+
+        }
+      },
+    ]
     });
 });
