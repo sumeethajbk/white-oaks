@@ -47,8 +47,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 .h5 {font-size: 1.5rem; line-height: 116%; margin-bottom:18px; letter-spacing: -0.48px;}
 .h6 {font-size: 1.25rem; line-height: 130%; margin-bottom: 18px; letter-spacing: -0.4px;}
 
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h2 span {position: relative; display: inline-block;}
-h1 span:before, h2 span:before, .h2 span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -7px; bottom:8px; background:url("images/accent-line.svg") 0 0 no-repeat; z-index: -1;}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h2 span, .h4 span {position: relative; display: inline-block;}
+h1 span:before, h2 span:before, .h2 span:before, .h4 span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -7px; bottom:8px; background:url("images/accent-line.svg") 0 0 no-repeat; z-index: -1;}
 
 
 
@@ -258,19 +258,20 @@ body .glsr-star.glsr-star-half{ background-image: url('images/star-half.svg') !i
 /*-- common form css ends here --*/
 
 
-
-
-
-
 /* Heading */
-.heading {clear: both; padding: 0 0 41px; width: 100%; justify-content: space-between; align-items: center;}
+.heading {clear: both; padding:0 0 38px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
+.heading .h1, .heading .h2, .heading .h3, .heading .h4, .heading h2, .heading h3, .heading h4 {margin-bottom: 0;}
+.heading-lt {flex-grow: 1; width: 70%; transition: all .3s ease-in-out;}
+.heading-rt {display: flex; justify-content: flex-end; flex-grow: 1;}
 
-.heading-lt h3 {margin: 0;}
-.heading-rt{  display: flex; justify-content: flex-end; flex-grow: 1;}
+.heading-rt {flex-grow: 1;  width: 30%;}
+.heading-rt:only-child {justify-content: flex-start;}
+.heading-rt .btn-wrap {justify-content: flex-end; gap:45px;}
+.heading-rt .btn-wrap .readmore {gap:15px;}
+
 .heading-rt form {justify-content: flex-end; width: 100%;}
 .heading-rt .form-field {margin:0 0 0 22px; width:29.71%; position: relative;}
 .heading-rt .form-field:first-child {margin-left: 0}
-.no-text .heading-rt {width: 100%; justify-content: flex-start;}
 .heading-rt.sch-form .form-field { width: 100%; }
 
 /* Full & Fluid width */
@@ -372,13 +373,9 @@ ul.follow-icons li:hover a{color: var(--limegreen);}
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
-    .heading-lt {width: 50%; flex-grow: 1;}
-    .heading-rt {width: calc(100% - 50%);}
     
-    body .ui-tabs .ui-tabs-nav li.dropdown-li ul {margin: 0; padding:0; width: 260px; top:100%; left:0; position: absolute; background-color: var(--white); opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.175,.885,.32,1.275); -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.41); -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.41); box-shadow:0 2px 3px 0 rgba(0,0,0,.41); z-index: 1;}
-
-    body .ui-tabs .ui-tabs-nav li.dropdown-li:hover ul {display: block; opacity: 1; visibility: visible;}
 }
+
 @media only screen and (max-width:1400px) {
     .container {padding:0 20px; max-width:100%;}
 }
@@ -387,18 +384,12 @@ ul.follow-icons li:hover a{color: var(--limegreen);}
 
 @media only screen and (max-width:1023px) and (min-width:720px) {
     .hide-in-tab, .hide-in-tablet {display:none;}
-    #mainContent {padding: 64px 0 0 0;}
-
-    .heading-lt {width: 50%;}
-    .heading-rt {width: calc(100% - 50%);}
-    
- 
-        body .ui-widget.ui-widget-content {padding: 40px 0 44px;}
-
+    #mainContent {padding: 64px 0 0 0;}   
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom:24px;}
+    
     .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 100%; }
     .frm-wrapper .frm_submit {width: 100%;}
     .frm-wrapper .frm_submit button {margin-left: 0!important;}
