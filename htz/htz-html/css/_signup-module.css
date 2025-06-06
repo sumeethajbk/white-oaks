@@ -19,9 +19,8 @@
 .signup-module .signup-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {top: 70px; color: var(--white) !important}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
 
-.signup-module .brand_asset.reverse {right: -9px; bottom: -88px;}
-
-
+.signup-module .brand_asset {left:-20px; top: -20px; right: auto; bottom: auto;}
+.signup-module .brand_asset.reverse {right:-8px; left: auto; top: auto; bottom: -88px;}
 
 @media only screen and (max-width:767px) and (min-width:200px) {
   
