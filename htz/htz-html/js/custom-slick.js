@@ -54,7 +54,7 @@ jQuery(document).ready(function () {
   });
   /* End of logo slider */
 
-  /* Testimonial Slider */
+  /* home banner Slider */
   jQuery(".home-banner-slide-main").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -65,6 +65,34 @@ jQuery(document).ready(function () {
     speed: 1000,
     dots: true,
     arrows: true,
+    adaptiveHeight: true,
+    infinite: true,
+    variableWidth: true,
+    prevArrow:
+      '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+    nextArrow:
+      '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+    responsive: [
+      {
+        breakpoint: 413,
+        settings: {
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+
+  /* home banner Slider */
+  jQuery(".feature-podcasts-slide-main").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+    infinite: false,
+    speed: 1000,
+    dots: false,
+    arrows: false,
     adaptiveHeight: true,
     infinite: true,
     variableWidth: true,

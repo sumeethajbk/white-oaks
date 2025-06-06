@@ -1,4 +1,4 @@
-#main_footer{padding-top: 80px;}
+#main_footer{padding: 80px 0 120px; clear: both;}
 /* .footer{padding: 80px 0 40px;} */
 .footer-vector{width: 500px; height: 500px; top: 0; left: 0}
 .footer-tp-wrap{justify-content: space-between;}
