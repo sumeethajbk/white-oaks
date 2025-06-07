@@ -42,8 +42,15 @@
     .fce-wrap {gap: 24px;}
     .fce-top-lt {min-height: 76.8vw;}
     .fce-top-rt {gap:16px;}
-    .fce-post {min-height: 38.4vw;}
     .fce-txt h2 {margin-bottom: 0; font-size: 2rem; letter-spacing: -0.64px;}
+    .fce-txt h2 span::before {display: none;}
     .fce-txt p {display: none;}
+    .fce-txt .cat-wrap {margin: 0 0 11px 0;}
+    
+    .fce-post {min-height: 38.4vw;}
+    .fce-post .fce-thumb:before {background: linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%), linear-gradient(255deg, var(--banner-shadow) 39.96%, var(--banner-shadow-100) 85.8%);}
+    
+    .fce-top-rt .fce-thumb:before {background: linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%), linear-gradient(255deg, var(--banner-shadow) 39.96%, #000 85.8%);}
+    
 }
 

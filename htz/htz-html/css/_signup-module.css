@@ -16,7 +16,7 @@
 .signup-module .signup-form .frm_forms .frm_submit {position: absolute; right: 0; top: 0; margin: 0; width: auto;}
 .signup-module .signup-form .frm_forms .frm_submit button {line-height: 100%; color: var(--signup-btn-txt)!important; text-transform: capitalize; background: var(--signup-btn-bg)!important; border-radius: 50px; padding: 20px; outline: 0 none; border: 0 none; box-shadow: none; margin: 0; min-width: 150px;}
 .signup-module .signup-form .frm_forms .frm_submit button:hover {background: var(--signup-btnbg-hover)!important; color: var(--signup-btnbg-hover-txt)!important;}
-.signup-module .signup-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {top: 70px; color: var(--white) !important}
+.signup-module .signup-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {top: 70px;}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
 
 .signup-module .brand_asset {left:-100px; top: -20px; right: auto; bottom: auto;}

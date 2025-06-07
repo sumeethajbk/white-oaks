@@ -6,7 +6,7 @@
 .repeater-text{width: 46.875%; flex-grow: 1;}
 .repeater-text .optional-text {text-transform: uppercase; margin: 0 0 5px 0;}
 .repeater-text .h4 {margin-bottom: 24px;}
-.repeater-text ul, .repeater-text ol {margin: 24px 0 24px 24px;}
+.repeater-text ul, .repeater-text ol {margin: -3px 0 24px 24px;}
 .repeater-text ul > li:before {width:5px; height:5px; top: 11px; left: -15px;}
 .repeater-text ul > li, .repeater-text ol > li {margin-bottom: 8px;}
 

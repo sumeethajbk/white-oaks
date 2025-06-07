@@ -5,16 +5,15 @@
 @import url("_fce-module.css");
 @import url("_featured-news-module.css");
 @import url("_signup-module.css");
+@import url("_micro-cta-module.css");
 
 .short-intro-module {padding-bottom: 20px;}
 .repeater-main{padding: 40px 0 80px 0;}
 
-.general-default-article-section {float: left; width: 100%; padding:79px 0 81px 0; background: var(--white); position: relative; z-index: 1;}
+.general-default-article-section {float: left; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
+.general-default-article-section .container .container {padding: 0;}
 .general-default-article-section .default-inner {position: relative;}
-.general-default-article-section .default-inner:before {content: ""; height: 255px; width:255px; position: absolute; background: var(--dirty-white); left: -80px; z-index: -1; top: -79px; display: block;}
-.general-default-article-section .default-inner:after {content: ""; height: 255px; width:1000%; position: absolute; background: var(--dirty-white); left: -1000%; z-index: -1; top: -79px; display: block;}
-.general-default-article-section .default-inner .optional-intro p {font-size: 1.5rem; line-height: 1.33; color: var(--grey); margin: 0 0 24px 0; display: block;}
-.general-default-article-section .default-inner .optional-intro .button {margin-bottom:23px;}
+
 .general-default-article-section .default-inner > h2:first-of-type {padding-top: 0;}
 .general-default-article-section .default-inner h1 {line-height: 1.17;}
 .general-default-article-section .default-inner h2 {padding-top: 25px;}
@@ -39,29 +38,12 @@
 
 .side-bucket .menu-bucket ul li::after{position: absolute; content: "\f105"; display: block; font-family: "Font Awesome 6 Pro"; color: var(--lime-500); top:10px; font-size: 13.5px; font-weight: 900; right:20px;}
 .side-bucket .menu-bucket ul li.active:after, .sidebar .side-bucket .menu-bucket ul li:hover:after{left: 19px; right: auto;}
-/* Default Thumb */
-.default-thumb {margin:64px 0 28px 0; position: relative;}
-.default-thumb figure {overflow: hidden; height: 484px;}
-.default-thumb figure img {border-radius: 16px;}
-.default-thumb figure figcaption {position: absolute; font-size:1rem; font-weight: 500; line-height: 1.3;  width:100%; padding:9px 12px 11px 38px; color: var(--white); background: rgba(40, 40, 44, 0.6); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); border-radius: 4px; max-width: 379px; bottom: 32px; z-index: 1; left: 32px;}
-.default-thumb figure figcaption:after {content: "\f03e"; display: block; position: absolute; width: 18px; height: 12px; left: 12px; font-family: "Font Awesome 6 Pro"; top: 14px; font-weight: normal; font-size: 1rem; color: var(--green); line-height: 12px;}
 
-.video-thumbnail iframe, .video-thumbnail.video_post {max-height: 540px; min-height: inherit !important;}
+
+
 
 
 /*-- media css starts here --*/
-
-@media only screen and (min-width: 1200px){
-}
-
-@media only screen and (min-width: 1024px){
-
-
-}
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .general-default-article-section h1 {margin-bottom: 34px}
-    .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 40px;}
-}
 
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
     .default-inner {width: 100%;}
@@ -71,17 +53,4 @@
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .repeater-main {padding: 40px 0;}
-    
-    
-    .split-banner-main .split-banner-text h1 {margin-bottom: 24px;}
-    .general-default-article-section {padding:40px 0 20px 0;}
-    .general-default-article-section .default-inner h1 {line-height: 1.2; margin-bottom: 19px;}
-    .general-default-article-section .default-inner::before, .general-default-article-section .default-inner::after {display: none;}
-    .general-default-article-section .default-inner .optional-intro .button {margin-bottom: 64px;}
-    .general-default-article-section .default-inner ul {margin: -4px 0 28px 24px;}
-    .general-default-article-section .default-inner > p:last-child {margin-bottom: 18px;}
-    .sidebar {margin:34px 0 0 0;}
-     .page-template-default .features-main .features-grid .readmore {display: inline-block; padding: 0;}
-
-
 }
