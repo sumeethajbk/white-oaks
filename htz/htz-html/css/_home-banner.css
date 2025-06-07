@@ -26,6 +26,9 @@
     .home-banner-slide-main .slick-list { margin-left: -105px; width: calc(100% + 105px); }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .ad-main {
+  padding: 0 0 20px;
+}
 }
 @media only screen and (max-width: 413px) and (min-width: 200px){
     .home-banner-wrap{padding: 0 23.5px 40px;}
