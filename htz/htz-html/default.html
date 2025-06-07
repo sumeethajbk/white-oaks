@@ -62,7 +62,7 @@
       <div class="banner-bg">
         <picture class="object-fit">
           <source srcset="images/default-banner@2x.jpg" media="(min-width:768px)">
-          <img src="images/default-banner@2x.jpg" alt="Default Banner"> </picture>
+          <img src="images/default-banner-mobile@2x.jpg" alt="Default Banner"> </picture>
       </div>
       <div class="container">
         <div class="default-banner-main flex">
@@ -75,7 +75,9 @@
     </section>
     <!-- end of default banner -->
     <section class="short-intro-module">
-      <div class="container">
+      <div class="container pos-relative">
+           <div class="brand-icon pos-absolute"><figure class="object-fit"> <img src="images/brand-icon.svg" alt="Brand Icon" title="Brand Icon"> </figure></div>
+      <!-- end of brand icon -->
         <div class="short-intro-main">
           <h2><span>A short</span> intro about this section.</h2>
           <p>Augue arcu congue porttitor mauris lorem eget. Vulputate enim fermentum morbi feugiat tincidunt aenean accumsan integer. Sit maecenas at risus eget interdum dictum sed odio. Amet suscipit nisl curabitur a. Sed ipsum lectus amet aliquam morbi ac. Pellentesque cras sed placerat velit consectetur.</p>
@@ -135,17 +137,17 @@
       </div>
     </section>
     <!-- end of repeater section -->
-    <section class="cta-module pos-relative">
-      <div class="brand_asset pos-absolute">
-        <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
-      </div>
-      <!-- end of brand_asset -->
+    <section class="cta-module pos-relative">     
       <div class="cta-bg">
         <picture class="object-fit">
           <source srcset="images/cta-bg@2x.jpg" media="(min-width:768px)">
-          <img src="images/cta-bg@2x.jpg" alt="CTA" title="CTA"> </picture>
+          <img src="images/cta-bg-mobile@2x.jpg" alt="CTA" title="CTA"> </picture>
       </div>
-      <div class="container">
+      <div class="container pos-relative">
+           <div class="brand_asset pos-absolute">
+        <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
+      </div>
+      <!-- end of brand_asset -->
         <div class="cta-main flex">
           <div class="cta-text"> <span class="optional-text">Optional Preheader</span>
             <div class="h2"><span>Flexible</span> CTA Module</div>
@@ -163,7 +165,7 @@
           <div class="heading-lt">
             <div class="h4"><span>Featured</span> Contests &amp; Events</div>
           </div>
-          <div class="heading-rt hide-in-mobile">
+          <div class="heading-rt hide-in-mobile hide-in-tablet">
             <div class="btn-wrap"> <a href="#" class="readmore" aria-label="button">View All Contests</a><a href="#" class="readmore" aria-label="button">View All Events</a> </div>
             <!-- end of btn wrap --> 
           </div>
@@ -246,7 +248,7 @@
           <!-- end of fce top rt --> 
         </div>
         <!-- end of fce wrap -->
-        <div class="btn-full hide-in-desktop hide-in-tablet">
+        <div class="btn-full hide-in-desktop">
           <div class="btn-wrap"> <a href="#" class="readmore" aria-label="button">View All Contests</a><a href="#" class="readmore" aria-label="button">View All Events</a> </div>
           <!-- end of btn wrap --> 
         </div>
@@ -254,9 +256,9 @@
     </section>
     <!-- end of fce module -->
     <section class="featured-news-module">
-      <div class="brand-icon pos-absolute"><figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure></div>
-      <!-- end of ps bg -->
-      <div class="container">
+      <div class="container pos-relative">
+        <div class="brand-icon pos-absolute"><figure class="object-fit"> <img src="images/brand-icon.svg" alt="Brand Icon" title="Brand Icon"> </figure></div>
+      <!-- end of brand icon -->
         <div class="fn-main flex">
           <div class="heading">
             <div class="heading-lt">
@@ -302,7 +304,7 @@
             <!--end of fn grid -->
             <div class="fn-grid">
               <div class="fn-thumb">
-                <figure class="object-fit"><img src="images/news-related-three@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
+                <figure class="object-fit"><img src="images/news-related-four@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
               </div>
               <div class="fn-cnt">
                 <div class="cat-wrap">
@@ -319,7 +321,7 @@
             <!--end of fn grid -->
             <div class="fn-grid">
               <div class="fn-thumb">
-                <figure class="object-fit"><img src="images/news-related-four@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
+                <figure class="object-fit"><img src="images/news-related-three@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
               </div>
               <div class="fn-cnt">
                 <div class="cat-wrap">
@@ -335,12 +337,16 @@
             </div>
             <!--end of fn grid --> 
           </div>
-          <div class="hide-in-desktop hide-in-tab heading-btn btn-full"> <a href="#" class="button">View All</a> </div>
+          <div class="hide-in-desktop hide-in-tablet btn-full"> 
+              <div class="btn-wrap">
+              <a href="#" class="readmore">View All News</a> </div></div>
         </div>
       </div>
     </section>
     <section class="signup-module">
-      <div class="brand_asset pos-absolute">
+      
+      <div class="container pos-relative">
+          <div class="brand_asset pos-absolute">
         <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
       </div>
       <!-- end of brand_asset -->
@@ -348,7 +354,6 @@
         <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
       </div>
       <!-- end of brand_asset -->
-      <div class="container">
         <div class="signup-wrap flex">
           <div class="signup-lt"> <span class="optional-text">Newsletter Signup</span>
             <h4>A short but persuasive headline aimed at driving signup <span>conversions.</span></h4>
@@ -453,7 +458,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-sticky">
+    <div class="footer-sticky" style="display: none">
       <div class="container">
         <div class="footer-bottom flex flex-vcenter">
           <div class="ft-btm-left flex flex-vcenter pos-relative">
@@ -506,6 +511,9 @@
 </div>
 <!-- end of main --> 
 <script src="js/jquery-3.7.1.min.js"></script> 
+<link rel="stylesheet" href="css/slick.css" media="all"/>
+<script src="js/slick.min.js"></script> 
+<script src="js/custom-slick.js"></script>
 <script src="js/custom-script.js"></script>
 </body>
 </html>
