@@ -44,7 +44,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 .h2 {font-size: 2.375rem; line-height:1.18; margin-bottom: 18px; letter-spacing: -0.76px;}
 .h3 {font-size: 2.5rem; line-height: 1.2; margin-bottom: 18px; letter-spacing: -0.8px;}
 .h4 {font-size: 2rem; line-height: 1.25; margin-bottom: 19px; letter-spacing: -0.64px;}
-.h5 {font-size: 1.5rem; line-height: 116%; margin-bottom:18px; letter-spacing: -0.48px;}
+.h5 {font-size: 1.5rem; line-height: 1.17; margin-bottom:16px; letter-spacing: -0.48px;}
 .h6 {font-size: 1.25rem; line-height: 130%; margin-bottom: 18px; letter-spacing: -0.4px;}
 
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h2 span, .h4 span {position: relative; display: inline-block;}
@@ -118,9 +118,9 @@ body .mfp-close:after {display: none;}
 /* Cat Wrap */
 .cat-wrap {clear: both; margin: 0 0 17px 0; justify-content: space-between; display: flex; flex-wrap: wrap; width: 100%;}
 .cat-wrap ul {margin: 0; font-size: 0; display: flex; flex-wrap: wrap; gap:8px;}
-.cat-wrap ul li {margin: 0; display: inline-block; text-transform: uppercase;}
+.cat-wrap ul li {margin: 0; display: inline-block;}
 .cat-wrap ul li:before {display: none;}
-.cat-wrap ul li a {display: inline-block; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg);}
+.cat-wrap ul li a {display: inline-block; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg); border-radius: 20px;}
 .cat-wrap ul li a:hover {color: var(--cat-txt-hover);}
 
 
@@ -133,7 +133,7 @@ body .mfp-close:after {display: none;}
 
 
 ul.slick-dots {margin:0; padding-top:31px; padding-bottom: 15px; display:flex; justify-content:center; width: 100%; position: absolute; bottom: -20px;}
-ul.slick-dots li {margin: 0 4px 15px !important; display:inline-block; font-size:0; line-height:0; width: 8px; height: 8px; background-color: var(--white); border-radius: 50%;}
+ul.slick-dots li {margin: 0 4px 15px; display:inline-block; font-size:0; line-height:0; width: 8px; height: 8px; background-color: var(--white); border-radius: 50%;}
 ul.slick-dots li::before, ul.slick-dots li button:before, ul.slick-dots li button:after {display:none;}
 ul.slick-dots li button {width:5px; height:5px; min-width:0; padding:0; font-size:0; line-height:0; border:0 none; background:var(--text-violetblue); opacity:0.3;}
 ul.slick-dots li.slick-active button {opacity:1;}
@@ -232,6 +232,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 /* Brand Asset/Icon */
 .brand_asset {display: block; width: 200px; height: 200px;}
 .brand_asset.reverse {transform: scale(-1, -1);}
+.brand-icon {display: block; width: 394px; height:446px;}
 
 
 /* Heading */
@@ -314,9 +315,8 @@ ul.follow-icons li:hover a{color: var(--limegreen);}
 
 
 
-@media only screen and (max-width:1023px) and (min-width:720px) {
+@media only screen and (max-width:1023px) and (min-width:768px) {
     .hide-in-tab, .hide-in-tablet {display:none;}
-    #mainContent {padding: 64px 0 0 0;}   
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
@@ -327,11 +327,19 @@ ul.follow-icons li:hover a{color: var(--limegreen);}
     .heading_mobile_menu:after {width:auto; right:20px; top:calc(50% + 2px); transform:translateY(-50%); font-size:18px; color: var(--heading); border:none; font-family:"Font Awesome 6 Pro"; font-weight:600; position:absolute; display:flex; align-items:center; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; background:none; content:"\f107";}
     .heading_mobile_menu.active::after {transform:translateY(-50%) rotate(-180deg);}
     
+    .btn-full .btn-wrap {justify-content: center; gap: 28px;}
+    
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
+    .banner-bg::after {background: linear-gradient(260deg, var(--banner-shadow) 51.58%, var(--banner-shadow-100) 87.24%), linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%);}
+    
     h1 {font-size: 2.813rem; line-height: 1.11; margin-bottom: 9px; letter-spacing: -0.9px;}
+    h2 {font-size: 2rem; letter-spacing: -0.64px; line-height: 1.25;}
+    h4 {font-size: 1.625rem; letter-spacing: -0.52px; line-height: 1.23;}
     .h4 {font-size: 1.625rem; letter-spacing: -0.52px; line-height: 1.23;}
+    
+    
     
     .optional-text {margin: 0 0 8px 0;}
     .container {padding:0 16px; max-width:100%;}
@@ -346,8 +354,8 @@ ul.follow-icons li:hover a{color: var(--limegreen);}
     .heading-lt { flex: inherit; width: 60%; flex-grow: 1;}
     .heading-rt {justify-content: flex-start;}
 
-    .ad-post {margin: auto; margin-bottom: 40px;}    
-    .ad-center{margin: 0 0 32px;}
+    /* Divider */
+    .icon {margin: 0 48px 0 48px;}
     
     
 

@@ -1,14 +1,11 @@
 .short-intro-module{ clear: both; width: 100%; z-index: 1; padding: 40px 0; position: relative;}
-.short-intro-module .short-intro-main {max-width:846px; margin: 0 auto; text-align: center;}
-.short-intro-module .short-intro-main h2 {letter-spacing: -0.6px; margin-bottom: 20px;}
+.short-intro-module .brand-icon {bottom: -237px; left: -11px;}
+.short-intro-module .short-intro-main {max-width:846px; margin: 0 auto; text-align: center; position: relative; z-index: 1;}
+.short-intro-module .short-intro-main h2 {letter-spacing: -0.6px; margin-bottom: 20px; font-size: 2.375rem;}
 .short-intro-module .short-intro-main h2 span:before {bottom: -13px; left: -11px;}
 
 /* media starts here */
-@media only screen and (max-width: 1023px) and (min-width: 768px){
-   
-
-}
 @media only screen and (max-width: 767px) and (min-width: 200px){
-   
+    .short-intro-module .short-intro-main h2 {line-height: 1.18; letter-spacing: -0.76px;}
 
 }

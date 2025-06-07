@@ -11,7 +11,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .default-banner-main {align-items: flex-end;}
     .default-banner-main .default-banner-text {padding: 40px 0 80px; font-size: 1rem;} 
-    .default-banner-main .default-banner-text h1 span:before {bottom: -3px;}
+    .default-banner-main .default-banner-text h1 span:before {bottom: -7px;}
     .default-banner-main .default-banner-text p {font-size: 1rem; line-height: 1.5;}
 
 }

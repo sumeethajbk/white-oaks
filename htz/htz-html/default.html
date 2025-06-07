@@ -62,7 +62,7 @@
       <div class="banner-bg">
         <picture class="object-fit">
           <source srcset="images/default-banner@2x.jpg" media="(min-width:768px)">
-          <img src="images/default-banner@2x.jpg" alt="Default Banner"> </picture>
+          <img src="images/default-banner-mobile@2x.jpg" alt="Default Banner"> </picture>
       </div>
       <div class="container">
         <div class="default-banner-main flex">
@@ -75,7 +75,9 @@
     </section>
     <!-- end of default banner -->
     <section class="short-intro-module">
-      <div class="container">
+      <div class="container pos-relative">
+           <div class="brand-icon pos-absolute"><figure class="object-fit"> <img src="images/brand-icon.svg" alt="Brand Icon" title="Brand Icon"> </figure></div>
+      <!-- end of brand icon -->
         <div class="short-intro-main">
           <h2><span>A short</span> intro about this section.</h2>
           <p>Augue arcu congue porttitor mauris lorem eget. Vulputate enim fermentum morbi feugiat tincidunt aenean accumsan integer. Sit maecenas at risus eget interdum dictum sed odio. Amet suscipit nisl curabitur a. Sed ipsum lectus amet aliquam morbi ac. Pellentesque cras sed placerat velit consectetur.</p>
@@ -135,17 +137,17 @@
       </div>
     </section>
     <!-- end of repeater section -->
-    <section class="cta-module pos-relative">
-      <div class="brand_asset pos-absolute">
-        <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
-      </div>
-      <!-- end of brand_asset -->
+    <section class="cta-module pos-relative">     
       <div class="cta-bg">
         <picture class="object-fit">
           <source srcset="images/cta-bg@2x.jpg" media="(min-width:768px)">
-          <img src="images/cta-bg@2x.jpg" alt="CTA" title="CTA"> </picture>
+          <img src="images/cta-bg-mobile@2x.jpg" alt="CTA" title="CTA"> </picture>
       </div>
-      <div class="container">
+      <div class="container pos-relative">
+           <div class="brand_asset pos-absolute">
+        <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
+      </div>
+      <!-- end of brand_asset -->
         <div class="cta-main flex">
           <div class="cta-text"> <span class="optional-text">Optional Preheader</span>
             <div class="h2"><span>Flexible</span> CTA Module</div>
@@ -163,7 +165,7 @@
           <div class="heading-lt">
             <div class="h4"><span>Featured</span> Contests &amp; Events</div>
           </div>
-          <div class="heading-rt hide-in-mobile">
+          <div class="heading-rt hide-in-mobile hide-in-tablet">
             <div class="btn-wrap"> <a href="#" class="readmore" aria-label="button">View All Contests</a><a href="#" class="readmore" aria-label="button">View All Events</a> </div>
             <!-- end of btn wrap --> 
           </div>
@@ -173,9 +175,7 @@
           <div class="fce-top-lt">
             <div class="fce-post pos-relative">
               <div class="fce-thumb"> <a href="#">
-                <picture class="object-fit" role="none">
-                  <source srcset="images/contest-big@2x.jpg" media="(min-width: 768px)">
-                  <img src="images/contest-big@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </picture>
+                <figure class="object-fit" role="none"> <img src="images/contest-big@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
                 </a> </div>
               <!-- end of fce thumb -->
               <div class="fce-txt">
@@ -195,9 +195,7 @@
           <div class="fce-top-rt">
             <div class="fce-post pos-relative">
               <div class="fce-thumb"> <a href="#">
-                <picture class="object-fit" role="none">
-                  <source srcset="images/contest-one@2x.jpg" media="(min-width: 768px)">
-                  <img src="images/contest-one@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </picture>
+                <figure class="object-fit" role="none"> <img src="images/contest-one@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
                 </a> </div>
               <!-- end of fce thumb -->
               <div class="fce-txt">
@@ -214,9 +212,7 @@
             <!-- end of fce post -->
             <div class="fce-post pos-relative">
               <div class="fce-thumb"> <a href="#">
-                <picture class="object-fit" role="none">
-                  <source srcset="images/contest-two@2x.jpg" media="(min-width: 768px)">
-                  <img src="images/contest-two@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </picture>
+                <figure class="object-fit" role="none"> <img src="images/contest-two@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
                 </a> </div>
               <!-- end of fce thumb -->
               <div class="fce-txt">
@@ -233,9 +229,7 @@
             <!-- end of fce post -->
             <div class="fce-post pos-relative">
               <div class="fce-thumb"> <a href="#">
-                <picture class="object-fit" role="none">
-                  <source srcset="images/contest-three@2x.jpg" media="(min-width: 768px)">
-                  <img src="images/contest-three@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </picture>
+                <figure class="object-fit" role="none"> <img src="images/contest-three@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
                 </a> </div>
               <!-- end of fce thumb -->
               <div class="fce-txt">
@@ -254,15 +248,105 @@
           <!-- end of fce top rt --> 
         </div>
         <!-- end of fce wrap -->
-        <div class="btn-full hide-in-desktop hide-in-tablet">
+        <div class="btn-full hide-in-desktop">
           <div class="btn-wrap"> <a href="#" class="readmore" aria-label="button">View All Contests</a><a href="#" class="readmore" aria-label="button">View All Events</a> </div>
           <!-- end of btn wrap --> 
         </div>
       </div>
     </section>
     <!-- end of fce module -->
+    <section class="featured-news-module">
+      <div class="container pos-relative">
+        <div class="brand-icon pos-absolute"><figure class="object-fit"> <img src="images/brand-icon.svg" alt="Brand Icon" title="Brand Icon"> </figure></div>
+      <!-- end of brand icon -->
+        <div class="fn-main flex">
+          <div class="heading">
+            <div class="heading-lt">
+              <h4><span>Featured</span> News</h4>
+            </div>
+            <div class="heading-rt hide-in-mobile"> <a href="#" class="readmore">View All News</a> </div>
+          </div>
+          <!-- end of heading -->
+          <div class="fn-lists flex">
+            <div class="fn-grid">
+              <div class="fn-thumb">
+                <figure class="object-fit"><img src="images/news-related-one@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
+              </div>
+              <div class="fn-cnt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Music Genre: Retro Hits</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <div class="h5"><a href="#">Top 10 Throwback Tracks from the 80s and 90s</a></div>
+                <p>Dive into the nostalgia with our latest roundup of classic hits that defined a generation. Get ready to reminisce!</p>
+                <span class="posted-date">09/15/2023</span> </div>
+              <!--end of fn cnt --> 
+            </div>
+            <!--end of fn grid -->
+            <div class="fn-grid">
+              <div class="fn-thumb">
+                <figure class="object-fit"><img src="images/news-related-two@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
+              </div>
+              <div class="fn-cnt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Genre: Retro Hits</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+               <div class="h5"><a href="#">Epic Throwback Radio Bash: Celebrating the 80s &amp; 90s</a></div>
+                <p>Discover the iconic tunes that defined the past!</p>
+                <span class="posted-date">09/15/2023</span> </div>
+              <!--end of fn cnt --> 
+            </div>
+            <!--end of fn grid -->
+            <div class="fn-grid">
+              <div class="fn-thumb">
+                <figure class="object-fit"><img src="images/news-related-four@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
+              </div>
+              <div class="fn-cnt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Music Genre: Retro Hits</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <div class="h5"><a href="#">Top 10 Nostalgic Anthems for Our Throwback Radio Event</a></div>
+                <p>Relive the magic of the 80s and 90s with our curated list of iconic songs. Perfect for any retro playlist!</p>
+                <span class="posted-date">09/15/2023</span> </div>
+              <!--end of fn cnt --> 
+            </div>
+            <!--end of fn grid -->
+            <div class="fn-grid">
+              <div class="fn-thumb">
+                <figure class="object-fit"><img src="images/news-related-three@2x.jpg" alt="Featured News Thumb" title="Featured News Thumb"/></figure>
+              </div>
+              <div class="fn-cnt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Music Genre: Retro Hits</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <div class="h5"><a href="#">10 Timeless Classics for the Ultimate Throwback Radio Party</a></div>
+                <p>Join us as we celebrate the timeless classics that continue to resonate with fans today!</p>
+                <span class="posted-date">09/15/2023</span> </div>
+              <!--end of fn cnt --> 
+            </div>
+            <!--end of fn grid --> 
+          </div>
+          <div class="hide-in-desktop hide-in-tablet btn-full"> 
+              <div class="btn-wrap">
+              <a href="#" class="readmore">View All News</a> </div></div>
+        </div>
+      </div>
+    </section>
     <section class="signup-module">
-      <div class="brand_asset pos-absolute">
+      
+      <div class="container pos-relative">
+          <div class="brand_asset pos-absolute">
         <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
       </div>
       <!-- end of brand_asset -->
@@ -270,7 +354,6 @@
         <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
       </div>
       <!-- end of brand_asset -->
-      <div class="container">
         <div class="signup-wrap flex">
           <div class="signup-lt"> <span class="optional-text">Newsletter Signup</span>
             <h4>A short but persuasive headline aimed at driving signup <span>conversions.</span></h4>
@@ -298,7 +381,6 @@
                           <button class="frm_button_submit frm_final_submit" type="submit" formnovalidate="formnovalidate">Submit</button>
                         </div>
                         <input type="hidden" name="item_key" value="">
-                       
                         <input name="frm_state" type="hidden" value="i3l6EXhA5ovhm4lH/jrINvJ7qc7BJpIKcLPe+EcZTrI=">
                       </div>
                     </fieldset>
@@ -315,90 +397,123 @@
     </section>
     <!-- end of signup module --> 
   </main>
-  <!-- end of main content --> 
-</div>
-<!-- end of main -->
-
-<footer id="main_footer">
-  <div class="container">
+  <!-- end of main content -->
+  
+  <footer id="main_footer">
     <div class="footer pos-relative">
-      <div class="footer-vector pos-absolute">
-        <figure class="object-fit"> <img src="images/footer-vector.svg" alt="footer vector"> </figure>
-      </div>
-      <div class="footer-top">
-        <div class="footer-tp-wrap flex">
-          <div class="footer-location">
-            <h6>Location</h6>
-            <p>123 Streetname Boulevard Cityname, Ontario M5M 5M5</p>
-          </div>
-          <div class="footer-phone">
-            <h6>Call Us</h6>
-            <p>Studio / Contest Line:<strong> (905) 688-9797</strong></p>
-            <p>Toll Free Studio / Contest Line:<strong> 1 (877) 977-4977</strong></p>
-            <p>Reception:<strong> (905) 688-0977</strong></p>
-          </div>
-          <div class="footer-tp-rt">
-            <div class="app-download">
-              <h6>Download Our App</h6>
-              <div class="ft-app-wrap flex flex-center"> <a href="#" class="ft-app-link flex flex-vcenter">
-                <div class="ft-app-lt">
-                  <figure class="object-fit"> <img src="images/apple.svg" alt="Apple"> </figure>
-                </div>
-                <div class="ft-app-txt"> <span class="ft-tp-txt">Download on the</span> <span class="ft-bt-txt">App Store
-                  </h4>
-                </div>
-                </a> <a href="#" class="ft-app-link flex flex-vcenter">
-                <div class="ft-app-rt">
-                  <figure class="object-fit"> <img src="images/google-play.svg" alt="Google Play"> </figure>
-                </div>
-                <div class="ft-app-txt"> <span class="ft-tp-txt">Get it on</span> <span class="ft-bt-txt">Google Play</span> </div>
-                </a> </div>
+      <div class="container">
+        <div class="footer-vector pos-absolute">
+          <figure class="object-fit"> <img src="images/brand-icon.svg" alt="footer vector"> </figure>
+        </div>
+        <div class="footer-top">
+          <div class="footer-tp-wrap flex">
+            <div class="footer-location">
+              <h6>Location</h6>
+              <p>123 Streetname Boulevard Cityname, Ontario M5M 5M5</p>
             </div>
-            <div class="follow-links">
-              <h6>FOLLOW US</h6>
-              <ul class="flw-links flex">
-                <li><a href="" class="flex flex-center"> <i class="fa-brands fa-linkedin"></i> </a></li>
-                <li><a href="" class="flex flex-center"> <i class="fa-brands fa-facebook-f"></i> </a></li>
-                <li><a href="" class="flex flex-center"> <i class="fa-brands fa-instagram"></i> </a></li>
+            <div class="footer-phone">
+              <h6>Call Us</h6>
+              <p>Studio / Contest Line:<strong> (905) 688-9797</strong></p>
+              <p>Toll Free Studio / Contest Line:<strong> 1 (877) 977-4977</strong></p>
+              <p>Reception:<strong> (905) 688-0977</strong></p>
+            </div>
+            <div class="footer-tp-rt">
+              <div class="app-download">
+                <h6>Download Our App</h6>
+                <div class="ft-app-wrap flex flex-center"> <a href="#" class="ft-app-link flex flex-vcenter">
+                  <div class="ft-app-lt">
+                    <figure class="object-fit"> <img src="images/apple.svg" alt="Apple"> </figure>
+                  </div>
+                  <div class="ft-app-txt"> <span class="ft-tp-txt">Download on the</span> <span class="ft-bt-txt">App Store</span> </div>
+                  </a> <a href="#" class="ft-app-link flex flex-vcenter">
+                  <div class="ft-app-rt">
+                    <figure class="object-fit"> <img src="images/google-play.svg" alt="Google Play"> </figure>
+                  </div>
+                  <div class="ft-app-txt"> <span class="ft-tp-txt">Get it on</span> <span class="ft-bt-txt">Google Play</span> </div>
+                  </a> </div>
+              </div>
+              <div class="follow-links">
+                <h6>FOLLOW US</h6>
+                <ul class="flw-links flex">
+                  <li><a href="" class="flex flex-center"> <i class="fa-brands fa-linkedin"></i> </a></li>
+                  <li><a href="" class="flex flex-center"> <i class="fa-brands fa-facebook-f"></i> </a></li>
+                  <li><a href="" class="flex flex-center"> <i class="fa-brands fa-instagram"></i> </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-cp-rights flex">
+            <p>Copyright © 2025 Whiteoaks Communications Group Ltd. All Rights Reserved. </p>
+            <div class="privacy-links">
+              <ul>
+                <li><a href="#">Political Ad Registry</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Accessibility Policy</a></li>
               </ul>
             </div>
+            <!-- end of privacy links --> 
+            
           </div>
         </div>
-        <hr>
-        <div class="footer-cp-rights flex">
-          <p>Copyright &copy;2023 GustoTV</p>
-          <div class="privacy-links">
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Accessibility</a></li>
-            </ul>
-          </div>
-          <!-- end of privacy links --> 
-          
-        </div>
       </div>
-      <div class="footer-bottom">
-        <div class="info-left">
-          <p>Created by Awesome Team</p>
-        </div>
-        <div class="svg-middle"> 
-          <!-- Sample inline SVG -->
-          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="#333"/>
-          </svg>
-        </div>
-        <div class="authors-right"> <img src="author1.jpg" alt="Author 1"> <img src="author2.jpg" alt="Author 2"> <img src="author3.jpg" alt="Author 3">
-          <button class="see-all">See All</button>
-        </div>
-      </div>
-      <!-- end of footer_btm --> 
-      
     </div>
-  </div>
-  <!-- end of footer --> 
-</footer>
+    <div class="footer-sticky" style="display: none">
+      <div class="container">
+        <div class="footer-bottom flex flex-vcenter">
+          <div class="ft-btm-left flex flex-vcenter pos-relative">
+            <div class="ft-btm-lt-img">
+              <figure class="object-fit"> <img src="images/ft-host-thumb@2x.jpg" alt="ft-host-thumb"> </figure>
+            </div>
+            <div class="ft-btm-rt-con">
+              <div class="ft-btm-txt flex flex-vcenter">
+                <div class="ft-speaker-icon">
+                  <figure class="object-fit"> <img src="images/speaker-icon.svg" alt="speaker-icon"> </figure>
+                </div>
+                <span>On air until 2:00pm</span> </div>
+              <h6>Host/Show Name</h6>
+            </div>
+          </div>
+          <div class="ft-btm-mid pos-relative">
+            <div class="ft-btm-vec pos-absolute">
+              <figure class="object-fit"> <img src="images/ft-wavefm.svg" alt=""> </figure>
+            </div>
+            <div class="ft-btm-live flex flex-vcenter"> <a href="" class="ft-btm-play flex flex-vcenter"> <i class="fa-sharp fa-solid fa-play" aria-hidden="true"></i> </a> <span>LISTEN LIVE</span> </div>
+          </div>
+          <div class="ft-btm-right flex flex-vcenter pos-relative">
+            <div class="ft-btm-rt-thumb">
+              <figure class="object-fit"> <img src="images/footer-thumb-one@2x.jpg" alt="ft-wavefm"> </figure>
+            </div>
+            <div class="ft-btm-rt-thumb">
+              <figure class="object-fit"> <img src="images/footer-thumb-two@2x.jpg" alt="ft-wavefm"> </figure>
+            </div>
+            <div class="ft-btm-rt-thumb">
+              <figure class="object-fit"> <img src="images/footer-thumb-three@2x.jpg" alt="ft-wavefm"> </figure>
+            </div>
+            <div class="ft-btm-rt-thumb pos-relative">
+              <figure class="object-fit"> <img src="images/footer-thumb-four@2x.jpg" alt="ft-wavefm"> </figure>
+              <a class="see-all-wrap pos-absolute flex flex-vcenter" href="#">
+              <div class="see-all">See All</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.33398C6.47715 2.33398 2 6.81113 2 12.334C2 17.8568 6.47715 22.334 12 22.334C17.5228 22.334 22 17.8568 22 12.334C22 6.81113 17.5228 2.33398 12 2.33398ZM8.0002 13.634C8.71817 13.634 9.3002 13.0519 9.3002 12.334C9.3002 11.616 8.71817 11.034 8.0002 11.034C7.28223 11.034 6.7002 11.616 6.7002 12.334C6.7002 13.0519 7.28223 13.634 8.0002 13.634ZM16.0002 13.634C16.7182 13.634 17.3002 13.0519 17.3002 12.334C17.3002 11.616 16.7182 11.034 16.0002 11.034C15.2822 11.034 14.7002 11.616 14.7002 12.334C14.7002 13.0519 15.2822 13.634 16.0002 13.634ZM12.0002 13.634C12.7182 13.634 13.3002 13.0519 13.3002 12.334C13.3002 11.616 12.7182 11.034 12.0002 11.034C11.2822 11.034 10.7002 11.616 10.7002 12.334C10.7002 13.0519 11.2822 13.634 12.0002 13.634Z" fill="white"></path>
+              </svg>
+              <!-- <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                </div> --> 
+              </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- end of main --> 
 <script src="js/jquery-3.7.1.min.js"></script> 
+<link rel="stylesheet" href="css/slick.css" media="all"/>
+<script src="js/slick.min.js"></script> 
+<script src="js/custom-slick.js"></script>
 <script src="js/custom-script.js"></script>
 </body>
 </html>

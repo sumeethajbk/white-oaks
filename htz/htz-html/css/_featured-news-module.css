@@ -1,0 +1,43 @@
+.featured-news-module{position: relative; clear: both; width: 100%;}
+.featured-news-module .brand-icon {left: -11px; top: -1px;}
+.fn-main {width: 100%; padding:80px 0 80px 0; clear: both;}
+.fn-main .heading {padding: 0 0 31px 0;}
+.fn-main h4 span:before {bottom: -3px; left: -14px;}
+.fn-lists {clear: both; width: 100%; position: relative; display: flex; flex-wrap: wrap; gap:3.125%;}
+.fn-grid {display: inline-block; width:22.65625%; vertical-align: top;}
+.fn-grid .fn-thumb {clear: both; width: 100%; position: relative; height: 193px; overflow: hidden}
+.fn-grid .fn-cnt {clear: both; width: 100%; padding:24px 0 0 0; background: var(--fn-cnt-bg);}
+.fn-grid .fn-cnt:only-child {padding: 0;}
+.fn-grid .fn-cnt .h5 {padding-right: 5px; margin-bottom: 15px;}
+.fn-grid .fn-cnt p {font-size:1rem; line-height: 1.5; margin-bottom: 15px;}
+.fn-grid .fn-cnt .posted-date {display: block; font-size: 0.75rem; opacity: 0.5; line-height: 1.67;}
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1400px){
+    .featured-news-module .brand-icon {left: 9px;}
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .fn-main {padding:64px 0 64px 0;}
+    .fn-grid {width:48.4%;}
+    .fn-lists {gap: 60px 3.125%;}    
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .featured-news-module .brand-icon {left: auto; right: -125px; top: -14px;}
+    .fn-main {padding:39px 0 37px;}
+    .fn-main .heading-btn {margin-top: 40px;}
+    .fn-main h4 span::before {bottom: -11px; left: -14px;}
+    .fn-grid {width: 342px; margin: 0 16px 0 0;}
+    .fn-grid .fn-cnt {margin-bottom: 30px;}
+    .fn-grid .fn-cnt .h5 {padding-right: 0; margin-bottom: 15px; font-size: 1.313rem; line-height: 1.1; letter-spacing: -0.42px;}
+    .fn-grid .fn-cnt p {margin-bottom: 14px;}
+    .fn-lists {padding: 0 0 68px 0; margin: 0 0 37px 0;}
+    .fn-lists ul.slick-dots {min-height: 52px; width: calc(100% - 120px); margin: 0 auto; position: absolute; left: 0; right: 0; bottom:0; padding: 0; display: flex; align-items: center; justify-content: center; gap: 7px;}
+    .fn-lists ul.slick-dots li {margin: 0;}
+    .fn-lists .slick-arrow {top: inherit; bottom: 0;}
+}
+
+

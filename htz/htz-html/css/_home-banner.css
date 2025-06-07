@@ -11,7 +11,7 @@
 .home-banner-wrap::before { content: ""; display: block; width: calc(100% - 80px); height: 100%; top: 0; left: -100%; position: absolute; background: var(--black); z-index: 1; }
 .home-banner-wrap::after { content: ""; display: block; width: calc(100% - 80px); height: 100%; top: 0; right: -100%; position: absolute; background: black; z-index: 1; }
 
-ul.slick-dots {z-index: 1; top: auto; bottom: -60px;}
+.home-banner-slide-main ul.slick-dots {z-index: 1; top: auto; bottom: -60px;}
 
 @media only screen and (min-width: 1300px){
     .home-banner-slide-main .slick-list{margin-left: -148px; width: calc(100% + 148px)}
