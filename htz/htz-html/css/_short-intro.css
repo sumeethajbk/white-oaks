@@ -6,6 +6,8 @@
 
 /* media starts here */
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .short-intro-module .brand-icon {right: -125px; bottom: inherit; top: -80px; left: inherit;}
+    .short-intro-module {padding-top: 80px;}
     .short-intro-module .short-intro-main h2 {line-height: 1.18; letter-spacing: -0.76px;}
 
 }

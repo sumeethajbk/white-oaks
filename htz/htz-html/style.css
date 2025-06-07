@@ -23,7 +23,7 @@ body {font-family: "Inter", sans-serif; color:var(--body-text); font-size:1.125r
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
 #mainContent {clear:both; position:relative; float:left; width:100%; padding: 82px 0 0 0;}
 .container {max-width:1280px; margin:0 auto; width:100%;}
-.container-md {max-width:1152px; margin:0 auto; width:100%;}
+.container-md {max-width:1080px; margin:0 auto; width:100%;}
 .container-sm {max-width:900px; margin:0 auto; width:100%;}
 .optional-text {font-size: 0.75rem; color:var(--optionaltxt); font-weight:bold; margin:0 0 9px 0; display:block; line-height: 1;}
 .btn-wrap {width:100%; clear:both; display: flex; flex-wrap: wrap; gap: 17px;}
