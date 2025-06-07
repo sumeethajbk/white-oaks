@@ -30,11 +30,15 @@ ul.slick-dots {z-index: 1; top: auto; bottom: -60px;}
 @media only screen and (max-width: 767px) and (min-width: 200px){
      .feature-podcasts-slide-main{display: block;}
     .feature-podcasts-slide{width: 100%!important;}
+
+    .feature-podcasts-slide-main::after { display: none; }
 }
 @media only screen and (max-width: 413px) and (min-width: 200px){
     .feature-podcasts-wrap{padding: 0 23.5px 40px;}
-    .feature-podcasts-slide-main .slick-arrow.slick-next{right: -24px;}
+    .feature-podcasts-slide-main .slick-arrow.slick-next{display: none!important;}
     .feature-podcasts-slide-main .slick-arrow.slick-prev{left: -24px;}
+
+    .feature-podcasts-wrap .readmore{margin: 20px auto 0;}
 
    
 }
