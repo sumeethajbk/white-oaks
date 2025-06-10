@@ -10,20 +10,16 @@
 .shows-banner-wrap .cat-wrap ul li{text-transform: uppercase;}
 .shows-banner-wrap .cat-wrap ul li a {gap: 8px; display: flex; align-items: center; color: var(--powder-blue); background-color: rgba(148, 207, 219, 0.15); padding: 4px 9px; width: fit-content; margin-bottom: 10px; border-radius: 0;}
 .shows-banner-wrap .cat-wrap ul li a:hover{color: var(--cat-txt-hover);}
-
-
 .shows-banner-wrap h1 span::before{left: -16px;}
 
-.shows-banner-slide{width: 1240px; margin: 0 6px 0 16px;}
-.shows-banner-slider .slick-list{overflow: inherit;}
 
-@media only screen and (min-width: 768px){
-.shows-banner-wrap{max-width: 664px; padding-left: 80px;}
-
-
+@media only screen and (min-width: 1024px){
 }
-
-
+@media only screen and (min-width: 768px){
+    .shows-banner-wrap{max-width: 664px; padding-left: 80px;}
+    .shows-banner-slider .slick-list{overflow: inherit;}
+    .shows-banner-slide{margin: 0 10px;}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .shows-banner-main{padding: 80px 16px 40px; align-items: flex-end;}
     .home-banner-slide-main .slick-arrow.slick-next{right: -24px;}
@@ -32,6 +28,8 @@
 
     .shows-banner-row{padding-bottom: 60px;}
     .shows-banner-row .slick-arrow{margin: inherit; top:inherit; bottom: 0;}
+    .shows-banner-row ul.slick-dots{bottom: -10px; width: calc(100% - 100px); left: 0; right: 0; margin: 0 auto;}
+    
 }
 
 
