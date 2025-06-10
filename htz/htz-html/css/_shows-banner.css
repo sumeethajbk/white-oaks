@@ -14,7 +14,7 @@
 
 .shows-banner-wrap h1 span::before{left: -16px;}
 
-.shows-banner-slide{width: 1240px; margin: 0 10px;}
+.shows-banner-slide{width: 1240px; margin: 0 6px 0 16px;}
 .shows-banner-slider .slick-list{overflow: inherit;}
 
 @media only screen and (min-width: 768px){
