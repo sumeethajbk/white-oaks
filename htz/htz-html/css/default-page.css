@@ -6,48 +6,47 @@
 @import url("_featured-news-module.css");
 @import url("_signup-module.css");
 @import url("_micro-cta-module.css");
+@import url("_single-cta-module.css");
+@import url("_block-module.css");
+@import url("_accordion-module.css");
+@import url("_single-testimonial-module.css");
+
 
 .short-intro-module {padding-bottom: 20px;}
 .repeater-main{padding: 40px 0 80px 0;}
 
-.general-default-article-section {float: left; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
-.general-default-article-section .container .container {padding: 0;}
-.general-default-article-section .default-inner {position: relative;}
+.general-default-container {float: left; width: 100%; padding:64px 0 80px 0; position: relative; z-index: 1;}
+.general-default-container .container .container {padding: 0;}
+.general-default-container ul {margin-top: -2px;}
+.general-default-container .divider {margin: 24px 0;}
+.general-default-container .ad-sm-wrap {margin: 63px 0 0 0;}
+.general-default-container .micro-cta-module {margin: 40px 0 63px 0;}
+.general-default-container .general-default-inner  h3 {padding: 40px 0 0 0;}
+.general-default-container .brand-icon {bottom: -28px; right: -43px;}
 
-.general-default-article-section .default-inner > h2:first-of-type {padding-top: 0;}
-.general-default-article-section .default-inner h1 {line-height: 1.17;}
-.general-default-article-section .default-inner h2 {padding-top: 25px;}
-.general-default-article-section .default-inner h3 {padding-top: 25px;}
-.general-default-article-section .default-inner ol {margin-top: -3px;}
-.default-main {justify-content: space-between;}
-.default-inner {width:67.578125%; flex-grow: 1;}
+.general-default-container .default-main {justify-content: space-between; gap:8.125%;}
+.general-default-container .default-main  h3 {padding: 13px 0 0 0;}
+.general-default-container .default-main .divider {margin:18px 0;}
 
-/* Sidebar */
-.sidebar {width: calc(100% - 73.828125%); margin:-1px 0 0 6.25%;}
-.sidebar .side-bucket {clear: both;}
-.sidebar .side-bucket h3  {display: block!important; border-bottom:  solid 4px var(--green); color: var(--heading); padding:0 0 8px 0!important; margin-bottom: 24px!important; font-family: DM Serif Display ,sans-serif; line-height: 1.25!important; font-size: 2rem!important; }
-.sidebar .side-bucket ul {margin: 0; padding: 0;}
-.sidebar .side-bucket ul li {display: block; margin-bottom: 8px!important; background-color: var(--dirty-white); color: var(--heading);}
-.sidebar .side-bucket ul li:last-child {margin-bottom: 0!important;}
-.sidebar .side-bucket ul li:before {display: none;}
-.sidebar .side-bucket ul li a {text-decoration: none; font-size: 1rem; font-weight: normal; display:block; color: var(--heading); padding: 9px 35px 9px 16px;
-  line-height: 1.4;}
-.sidebar .side-bucket ul li.active , .sidebar .side-bucket ul li:hover {background: var(--green-700);}
-.sidebar .side-bucket ul li.active a, .sidebar .side-bucket ul li:hover a{color: var(--white); padding:9px 16px 9px 40px;} 
-.side-bucket .menu-bucket h5{color: var(--coal); margin-bottom: 30px; font-weight: 700;}
-
-.side-bucket .menu-bucket ul li::after{position: absolute; content: "\f105"; display: block; font-family: "Font Awesome 6 Pro"; color: var(--lime-500); top:10px; font-size: 13.5px; font-weight: 900; right:20px;}
-.side-bucket .menu-bucket ul li.active:after, .sidebar .side-bucket .menu-bucket ul li:hover:after{left: 19px; right: auto;}
-
-
+.default-inner {position: relative;}
+.default-inner .brand-icon {left: -11px; right: auto; bottom: -39px;}
 
 
 
 /*-- media css starts here --*/
 
+@media only screen and (min-width: 1024px) {
+.default-inner {flex: 1;}  
+    
+/* Sidebar */
+.sidebar {width:335px;}
+.sidebar .side-bucket {clear: both; margin: 0 0 40px 0;}
+.sidebar .side-bucket .ad-300 {max-width: 300px; margin-left: auto;}
+.sidebar .brand-icon {top: 287px; bottom: inherit; margin: auto; z-index: -1;}
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
-    .default-inner {width: 100%;}
-    .sidebar {width: 100%; max-width: 100%; margin: 40px 0 0 0;}
+    .sidebar {margin: 37px 0 0 0; clear: both;}
 }
 
 
