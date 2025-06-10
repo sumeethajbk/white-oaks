@@ -1,0 +1,6 @@
+@import url("_shows-banner.css");
+@import url("_shows-day-slider.css");
+
+
+
+.ad-main .ad-sm:before{display: block; width: 100%; height: 100%; content:""; background: rgba(145, 145, 145, 0.40);}
