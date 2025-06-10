@@ -28,6 +28,7 @@ background-position: bottom right; background-size: 12px 1px; background-repeat:
 
 
 .feature-cta-primary-main {margin: 47px auto 46px;}
+.feature-cta-primary-txt .h1 span {display: inline;}
 .feature-cta-primary-rt .button {background: var(--signup-btn-bg); color: var(--signup-btn-txt); width: 100%; gap:7px; padding:12px 21px 14px 20px;}
 .feature-cta-primary-rt .button:after {display: none;}
 .feature-cta-primary-rt .button:hover {background: var(--signup-btnbg-hover); color: var(--signup-btnbg-hover-txt);}
@@ -60,6 +61,7 @@ background-position: bottom right; background-size: 12px 1px; background-repeat:
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    .default-inner .feature-cta-primary-txt {padding: 32px 16px; min-height: inherit;}
-    .default-inner .feature-cta-primary-txt .h1 {text-align: left; margin: 0 0 42px 0;}
+    .feature-cta-primary-txt {padding: 32px 16px; min-height: inherit;}
+    .feature-cta-primary-txt .h1 {text-align: left; margin: 0 0 42px 0;}
+    .feature-cta-primary-txt .h1 span:before {left: -135px;}
 }
