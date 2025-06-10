@@ -1,8 +1,8 @@
 .single-testimonial {clear: both; width: 100%; position: relative; padding:40px 0 64px;}
-.single-testimonial-wrap {display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; background: var(--grey); padding: 56px 56px 57px 56px; gap:5%;}
-
+.single-testimonial-wrap {display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; background: var(--grey); padding: 56px 56px 57px 56px; gap:5%; position: relative;}
+.single-testimonial-wrap:after {content:""; background: url("../images/quote.svg") 0 0 no-repeat; display: block; position: absolute; right: 56px; top: 56px; width: 74px; height: 64px; opacity: 0.1;}
 .single-testimonial-lt {width: calc(100% - 22%); position: relative;}
-.single-testimonial-lt:after {content:""; background: url("../images/quote.svg") 0 0 no-repeat; display: block; position: absolute; right: 0; top: 0; width: 74px; height: 64px; opacity: 0.1;}
+
 .single-testimonial-lt:only-child {flex-grow: 1;}
 .single-testimonial-lt p {font-size:2rem; line-height: 1.25; letter-spacing: -0.64px; font-weight: bold;}
 .single-testimonial-lt p span {display: inline-block; position: relative; z-index: 1;}
@@ -27,10 +27,11 @@
 
 @media only screen and (max-width:767px) and (min-width:200px) {
     .single-testimonial-wrap {flex-direction: column-reverse; padding: 32px 24px; gap:24px;}
+    .single-testimonial-wrap::after {right: 24px; bottom: 48px; top: inherit;}
     .single-testimonial-lt {width: 100%;}
-    .single-testimonial-rt {width: 100%;}
-    .single-testimonial-rt .single-testimonial-thumb {width: 86px; height: 86px; margin:0 22px 0 0;}
-    .clients-info {display: flex; flex-wrap: wrap; width: calc(100% -  31.871345029239766%);}
-    .clients-info span {text-align: left;}
+    .single-testimonial-rt {width: 100%; display: flex; flex-wrap: wrap; align-items: center;}
+    .single-testimonial-rt .single-testimonial-thumb {width: 86px; height: 86px; margin:0 18px 0 0;}
+    .single-testimonial-rt .clients-info {display: flex; flex-wrap: wrap; width: calc(100% - 108px); margin: 0;}
+    .single-testimonial-rt .clients-info span {text-align: left; padding: 0 45px 0 0;}
     
 }

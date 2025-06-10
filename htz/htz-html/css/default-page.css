@@ -32,24 +32,37 @@
 .default-inner .brand-icon {left: -11px; right: auto; bottom: -39px;}
 
 
+/* Sidebar */
+.sidebar {width:335px;}
+.sidebar .side-bucket {clear: both; margin: 0 0 40px 0;}
+.sidebar .side-bucket:last-child {margin-bottom: 0;}
+.sidebar .side-bucket .ad-300 {max-width: 300px; margin-left: auto;}
+.sidebar .brand-icon {top: 287px; bottom: inherit; margin: auto; z-index: -1;}
 
 /*-- media css starts here --*/
 
 @media only screen and (min-width: 1024px) {
 .default-inner {flex: 1;}  
-    
-/* Sidebar */
-.sidebar {width:335px;}
-.sidebar .side-bucket {clear: both; margin: 0 0 40px 0;}
-.sidebar .side-bucket .ad-300 {max-width: 300px; margin-left: auto;}
-.sidebar .brand-icon {top: 287px; bottom: inherit; margin: auto; z-index: -1;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
-    .sidebar {margin: 37px 0 0 0; clear: both;}
+    .sidebar {clear: both; margin: 37px auto 0 auto;}
+    .sidebar .side-bucket .ad-300 {margin: 0 auto;}
+    .sidebar .brand-icon {top: -90px; right: -125px;}
 }
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .repeater-main {padding: 40px 0;}
+    
+    .general-default-container {padding: 21px 0 21px;}
+    .general-default-container .micro-cta-module {margin: 39px 0 40px 0;}
+    .general-default-container .general-default-inner h3 {padding: 17px 0 0 0;}
+    .ad-sm-wrap {margin: 17px 0 0 0;}
+    .accordion-module {padding: 16px 0;}
+    .single-testimonial {padding: 16px 0 64px;}
+}
+
+@media only screen and (max-width:480px) {
+
 }
