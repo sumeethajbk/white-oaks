@@ -1,12 +1,15 @@
 .single-cta {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; margin:64px 0;}
-.single-cta-inner {width: 100%; align-items:center; border-left: solid 7px var(--theme); padding:10px 24px 9px 24px;}
+.single-cta-inner {width: 100%; align-items:center; border-left: solid 7px var(--theme);}
 .single-cta-inner .h5 {margin-bottom:0;}
 .single-cta-inner .h5 span:before {left:-28px; bottom:-5.75px; z-index: -1;}
-.single-cta-inner .h5 a {font-size: 1.5rem; line-height: 1.17; letter-spacing: -0.48px; gap:0; display:inline-block;}
-.single-cta-inner .h5 a.readmore::after {font-size: 37px; line-height: 24px; margin: 0 0 0 24px; vertical-align: middle;}
+.single-cta-inner .h5 a {font-size: 1.5rem; line-height: 1.17; letter-spacing: -0.48px; gap:0; display:inline-block; padding: 10px 51px 9px 24px;}
+.single-cta-inner .h5 a.readmore::after {font-size: 37px; line-height: 24px; vertical-align: middle; position: absolute; right: 0; top: 0; bottom: 0; margin: auto; display: flex; align-items: center;}
 
 
 /*-- media starts here --*/
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    
+    .single-cta {margin: 40px 0;}
+    .single-cta-inner .h5 a {font-size: 1.313rem; letter-spacing: -0.42px; line-height: 1.1; padding: 0 51px 0px 17px;}
+    .single-cta-inner .h5 span::before {left: -6px;}
+    .single-cta-inner .h5 a.readmore::after {right: 10px;}
 }

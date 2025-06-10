@@ -45,8 +45,12 @@ background-position: bottom right; background-size: 12px 1px; background-repeat:
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
     .default-banner-main .default-banner-text {padding: 71px 0 120px;}
     .event-details-bucket {margin:-120px 0 40px 0;}
-     .event-cnt::before {width: calc(100% - 40px);}
+    .event-cnt::before {width: calc(100% - 40px);}
     .event-table .label {width:80px;}
+    
+    .general-default-container {padding: 40px 0 80px;}
+    .default-inner .brand-icon {display: none;}
+    .back {text-align: center;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width:768px) {
