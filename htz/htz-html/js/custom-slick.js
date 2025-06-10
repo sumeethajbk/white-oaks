@@ -25,10 +25,10 @@ jQuery(document).ready(function () {
       },
     ],
   });
-    
-/* Featured News */
+
+  /* Featured News */
   if (jQuery(window).width() <= 767) {
-    jQuery('.fn-lists').slick({
+    jQuery(".fn-lists").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
@@ -38,10 +38,10 @@ jQuery(document).ready(function () {
       touchThreshold: 200,
       swipeToSlide: true,
       adaptiveHeight: true,
-       prevArrow:
-      '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
-    nextArrow:
-      '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+      prevArrow:
+        '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+      nextArrow:
+        '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
     });
   }
 
@@ -70,5 +70,60 @@ jQuery(document).ready(function () {
         },
       },
     ],
+  });
+
+  /* shows banner */
+
+  jQuery(".shows-banner-row").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: "0",
+    prevArrow:
+      '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+    nextArrow:
+      '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {},
+      },
+    ],
+  });
+
+  /* day slider show slider */
+
+  jQuery(".day-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    arrows: true,
+    infinite: false,
+    variableWidth: true,
+    asNavFor: ".show-slider",
+    prevArrow:
+      '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+    nextArrow:
+      '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+  });
+
+  jQuery(".show-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: ".day-slider",
+    arrows: true,
+    infinite: false,
+    variableWidth: true,
+    prevArrow:
+      '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+    nextArrow:
+      '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
   });
 });

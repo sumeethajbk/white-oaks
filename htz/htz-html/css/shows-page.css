@@ -1,0 +1,11 @@
+@import url("_shows-banner.css");
+@import url("_shows-day-slider.css");
+@import url("_weekdays-section.css");
+@import url("_weekday-show-section.css");
+@import url("_feature-podcasts.css");
+
+.ad-sm-wrap{margin: 40px 0;}
+.ad-main .ad-sm:before{display: block; width: 100%; height: 100%; content:""; background: rgba(145, 145, 145, 0.40);}
+.ad-sm .brand-asset{ bottom: -70px; right: -360px;}
+
+  .feature-podcasts-wrap {padding: 40px 0 40px;}
