@@ -1,0 +1,12 @@
+.single-cta {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; margin:64px 0;}
+.single-cta-inner {width: 100%; align-items:center; border-left: solid 7px var(--theme); padding:10px 24px 9px 24px;}
+.single-cta-inner .h5 {margin-bottom:0;}
+.single-cta-inner .h5 span:before {left:-28px; bottom:-5.75px; z-index: -1;}
+.single-cta-inner .h5 a {font-size: 1.5rem; line-height: 1.17; letter-spacing: -0.48px; gap:0; display:inline-block;}
+.single-cta-inner .h5 a.readmore::after {font-size: 37px; line-height: 24px; margin: 0 0 0 24px; vertical-align: middle;}
+
+
+/*-- media starts here --*/
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    
+}

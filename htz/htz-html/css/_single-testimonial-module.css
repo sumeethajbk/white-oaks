@@ -1,0 +1,36 @@
+.single-testimonial {clear: both; width: 100%; position: relative; padding:40px 0 64px;}
+.single-testimonial-wrap {display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; background: var(--grey); padding: 56px 56px 57px 56px; gap:5%;}
+
+.single-testimonial-lt {width: calc(100% - 22%); position: relative;}
+.single-testimonial-lt:after {content:""; background: url("../images/quote.svg") 0 0 no-repeat; display: block; position: absolute; right: 0; top: 0; width: 74px; height: 64px; opacity: 0.1;}
+.single-testimonial-lt:only-child {flex-grow: 1;}
+.single-testimonial-lt p {font-size:2rem; line-height: 1.25; letter-spacing: -0.64px; font-weight: bold;}
+.single-testimonial-lt p span {display: inline-block; position: relative; z-index: 1;}
+.single-testimonial-lt p span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -17px; bottom:-2px; background:url("../images/accent-line.svg") 0 0 no-repeat; z-index: -1;}
+
+.single-testimonial-rt .clients-info {clear: both; width: 100%; margin: 18px 0 0 0;}
+.single-testimonial-rt .author-name {display: block; font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.4px; width: 100%; font-weight: bold;}
+.single-testimonial-rt .author-pos {display: block; font-size: 0.75rem; opacity: 0.5; line-height: 1; width: 100%; font-weight: bold; margin: 3px 0 0 0;}
+.single-testimonial-rt {width:120px;}
+.single-testimonial-rt .single-testimonial-thumb {width: 120px; height: 120px; position: relative; z-index: 1;}
+.single-testimonial-rt .single-testimonial-thumb img {border-radius: 50%;}
+
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .single-testimonial-lt p {font-size: 1.625rem; line-height: 1.23; letter-spacing: -0.52px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .single-testimonial-wrap {padding: 40px;}
+    .single-testimonial-lt {width: calc(100% - 25%);}   
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .single-testimonial-wrap {flex-direction: column-reverse; padding: 32px 24px; gap:24px;}
+    .single-testimonial-lt {width: 100%;}
+    .single-testimonial-rt {width: 100%;}
+    .single-testimonial-rt .single-testimonial-thumb {width: 86px; height: 86px; margin:0 22px 0 0;}
+    .clients-info {display: flex; flex-wrap: wrap; width: calc(100% -  31.871345029239766%);}
+    .clients-info span {text-align: left;}
+    
+}
