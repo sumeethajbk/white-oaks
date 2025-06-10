@@ -56,8 +56,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 
 
 
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h2 span, .h4 span, .h5 span {position: relative; display: inline-block;}
-h1 span:before, h2 span:before, .h2 span:before, .h3 span:before, h3 span:before, .h4 span:before, h4 span:before, .h5 span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -7px; bottom:8px; background:url("images/accent-line.svg") 0 0 no-repeat; z-index: -1;}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h4 span, .h5 span {position: relative; display: inline-block;}
+h1 span:before, .h1 span:before, h2 span:before, .h2 span:before, .h3 span:before, h3 span:before, .h4 span:before, h4 span:before, .h5 span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -7px; bottom:8px; background:url("images/accent-line.svg") 0 0 no-repeat; z-index: -1;}
 
 h3 span:before {left: -17px; bottom: -1px;}
 h2 span:before {left: -13px; bottom: -13px;}
