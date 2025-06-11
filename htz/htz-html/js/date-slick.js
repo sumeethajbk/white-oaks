@@ -1,36 +1,103 @@
-/* day slider show slider */
+jQuery(document).ready(function () {
+  if (jQuery(window).width() >= 768) {
+    let isUserClick = false;
+    let currentActiveSlideIndex = 0;
+    let days = jQuery(".day-box strong");
 
-jQuery(".day-slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 7,
-  focusOnSelect: true,
-  arrows: true,
-  infinite: false,
-  variableWidth: true,
-  asNavFor: ".show-my-sliders",
-  prevArrow:
-    '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
-  nextArrow:
-    '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
-});
+    days.each((_i, ele) => {
+      let dayText = jQuery(ele).text().trim();
+      let dayOfWeek = dayText.slice(0, 3);
+      let newText =
+        `${dayOfWeek}` + `<span class="day">${dayText.slice(3)}</span>`;
+      jQuery(ele).html(newText);
+    });
 
-jQuery(".show-my-sliders").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: ".day-slider",
-  arrows: false,
-  infinite: false,
-  fade: true,
-});
+    jQuery(".day-slider").on("init", function (event, slick) {
+      jQuery(
+        jQuery(".day-slider .slick-slide").eq(0).find(".day-box")[0]
+      ).addClass("day-active");
+    });
 
-jQuery(".show-slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  infinite: false,
-  variableWidth: true,
-  prevArrow:
-    '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
-  nextArrow:
-    '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+    jQuery(".day-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      arrows: true,
+      infinite: false,
+      prevArrow:
+        '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+      nextArrow:
+        '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+    });
+
+    jQuery(".day-slider").on("setPosition", function (event, slick) {
+      if (!isUserClick) {
+        const currentSlideIndex = slick.currentSlide;
+        if (currentSlideIndex !== currentActiveSlideIndex) {
+          jQuery(".day-box").removeClass("day-active");
+          const activeSlide = slick.$slides.eq(currentSlideIndex);
+          const myActiveBox = jQuery(activeSlide.find(".day-box")[0]);
+          myActiveBox.addClass("day-active");
+          currentActiveSlideIndex = currentSlideIndex;
+          let myslideno = +myActiveBox.attr("data-slide-box");
+          jQuery(`[data-slide-show]`).hide();
+          jQuery(`[data-slide-show=${myslideno}]`).fadeIn(1000);
+        }
+      }
+    });
+
+    jQuery("[data-slide-box]").on("click", function (e) {
+      e.preventDefault();
+
+      isUserClick = true;
+
+      jQuery(this).siblings("[data-slide-box]").removeClass("day-active");
+      jQuery(this).addClass("day-active");
+
+      var slideno = jQuery(this).data("slide-box");
+
+      jQuery(`[data-slide-show]`).hide();
+      jQuery(`[data-slide-show=${slideno}]`).fadeIn(1000);
+
+      setTimeout(function () {
+        isUserClick = false;
+      }, 100);
+    });
+
+    jQuery(".show-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      variableWidth: true,
+      prevArrow:
+        '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+      nextArrow:
+        '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+    });
+  }
+  if (jQuery(window).width() <= 767) {
+    jQuery(".day-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      asNavFor: ".show-my-sliders",
+      variableWidth: true,
+      centerMode: true,
+      centerPadding: "0",
+      arrows: true,
+      infinite: false,
+      prevArrow:
+        '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
+      nextArrow:
+        '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><i class="fa-solid fa-circle-chevron-right"></i></div>',
+    });
+    jQuery(".show-my-sliders").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      arrows: false,
+      asNavFor: ".day-slider",
+    });
+  }
 });
