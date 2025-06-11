@@ -33,3 +33,6 @@
 .shows-block figure{margin-bottom: 24px;}
 .shows-block-info span{font-size: 12px; line-height: 100%; color: var(--optionaltxt); font-weight: 700; margin-bottom: 12px; display: block;}
 .shows-block-info h3{font-size: 2rem; line-height: 125%; margin-bottom: 6px;}
+
+
+.show-my-slider:not(:first-child){display: none;}
