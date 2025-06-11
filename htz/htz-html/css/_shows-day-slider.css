@@ -7,13 +7,11 @@
 .day-slider{margin-bottom: 40px;}
 .day-slider .slick-arrow{width: 32px; height: 32px;}
 .day-slider .slick-arrow i{font-size: 16px;}
-.day-box { background: black; color: var(--white); padding: 15px; border: 2px solid var(--white); text-align: center; cursor: pointer; margin: 0 10px; }
+.day-box { background: black; color: var(--white); padding: 15px; border: 2px solid var(--white); text-align: center; cursor: pointer; margin: 0; flex: 1; }
 .day-box strong{display: block; margin-top: -4px; font-size: 16px; font-weight: 600;}
-.day-box.slick-current { background: var(--optionaltxt); border: none; color:var(--black); }
-.day-box.slick-slide{width: 165px;}
+.day-box.day-active{ background: var(--optionaltxt); border: none; color:var(--black); }
 
-.day-slider .slick-arrow{top: -213px;}
-.day-slider .slick-arrow.slick-prev{left: auto; right: 36px;}
+
 
 
 .show-slider .slick-list{overflow: inherit;}
@@ -26,3 +24,27 @@
 .shows-block figure{margin-bottom: 24px;}
 .shows-block-info span{font-size: 12px; line-height: 100%; color: var(--optionaltxt); font-weight: 700; margin-bottom: 12px; display: block;}
 .shows-block-info h3{font-size: 2rem; line-height: 125%; margin-bottom: 6px;}
+
+
+
+
+/* media css starts here */
+@media only screen and (min-width: 768px){
+    [data-slide-show]:not(:first-child){display: none;}
+    .day-slider.slick-slider .slick-slide{display: flex; gap: 20px;}
+    .day-box.slick-slide{width: 165px;}
+    .day-slider .slick-arrow{top: -213px;}
+    .day-slider .slick-arrow.slick-prev{left: auto; right: 36px;}
+    .day-slider.hide-in-tablet{display: none;}
+}
+@media only screen and (min-width: 1024px){
+}
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .day-box span.day{display: none;}
+}
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .day-slider.slick-slider.hide-in-mobile{display: none;}
+    .day-box.slick-slide{width: 203px; opacity: 0;}
+    .day-box.slick-current{opacity: 1;}
+    .show-slider{flex-direction: column; gap: 24px;}
+}
