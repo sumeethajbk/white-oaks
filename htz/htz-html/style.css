@@ -43,6 +43,12 @@ body {font-family: "Inter", sans-serif; color:var(--body-text); font-size:1.125r
   55%  { opacity: 1; transform: translate(0, 0) scale(1); }
 }
 
+@keyframes rotateInfinite {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--anchor); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--anchor-hover);}
 
@@ -155,8 +161,13 @@ ul.slick-dots li.slick-active button {opacity:1;}
 ul.slick-dots li.slick-active{background-color: var(--theme);}
 
 #blog_list{margin: 0;}
-.btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
-.btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: center center; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
+
+.btn-center{position: relative; z-index: 1; width: 100%; text-align: center; margin: 52px 0 0 0;}
+.load-more .button {min-width: 190px; font-size: 1rem; font-weight: 600; line-height: 1.5; padding: 14px 25px 16px 20px; gap: 9px; transition: transform 0.8s ease;}
+.load-more .button:after {display: none;}
+.load-more .button:hover svg {width: 24px; height: 20px; animation: rotateInfinite 1s linear infinite;}
+.load-more .button:hover svg path {fill:var(--white);}
+
 
 /* Default Thumb */
 .default-thumb {margin:64px 0 64px 0; position: relative; clear: both; width: 100%; min-height: 525px; display: flex; flex-wrap: wrap;}
@@ -310,22 +321,6 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
 .ad-sm-wrap {clear: both; width: 100%;}
 .ad-sm{max-width: 728px; margin: 0 auto;}
 
-
-/*
-
-ul.follow-icons > li{  margin-bottom: 0; background: var(--limegreen); border-radius: 50%; width: 40px; height: 40px; align-items: center; display: flex;}
-ul.follow-icons > li a{text-decoration: none;}
-ul.follow-icons > li::before{display: none;}
-ul.follow-icons{ justify-content: flex-end; margin: 0;}
-ul.follow-icons li:last-child{margin-right: 0;}
-ul.follow-icons li:hover{background: var(--heading);}
-ul.follow-icons li:hover a{color: var(--limegreen);}
-*/
-
-
-
-.heading_mobile_menu {display:none;}	
-.category-main.no-post-found {padding-bottom: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {

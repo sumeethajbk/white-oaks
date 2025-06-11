@@ -100,6 +100,7 @@ button:hover, .button:hover {color: var(--btn-txt-hover); background-color: var(
 .button:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
 button:focus, .button:focus, button:active, .button:active {background-color: var(--btn-bg); color: var(--btn-txt);} 
 
+.button.sm {gap: 14px; padding: 5px 25px 5px 20px;}
 
 .button.normal-btn {padding: 10px 32px;  letter-spacing: -0.16px; line-height: 1.5; font-weight: 700; font-size: 1rem;}
 .button.normal-btn:after {display: none;}
