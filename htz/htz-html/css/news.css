@@ -47,9 +47,14 @@
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .news-banner-container {padding: 64px 0;}
-    .news-wrap {gap:30px;}
-    .news-top-rt {flex-direction:inherit;}
+    .news-wrap {gap:30px; margin: 0;}
+    .news-top-rt-inner {flex-direction:inherit;}
     .news-post {min-height: 200px;}
+    
+    /* News Lists */
+    .news-main {padding:64px 0 64px 0;}
+    .news-grid {width:48.4%;}
+    .news-lists {gap: 60px 3.125%;}   
 }
 
 
@@ -66,9 +71,18 @@
     .news-txt .cat-wrap {margin: 0 0 11px 0;}
     
     .news-post {min-height: 38.4vw;}
-    .news-post .news-thumb:before {background: linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%), linear-gradient(255deg, var(--banner-shadow) 39.96%, var(--banner-shadow-100) 85.8%);}
-    
+    .news-post .news-thumb:before {background: linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%), linear-gradient(255deg, var(--banner-shadow) 39.96%, var(--banner-shadow-100) 85.8%);}    
     .news-top-rt .news-thumb:before {background: linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%), linear-gradient(255deg, var(--banner-shadow) 39.96%, #000 85.8%);}
+    
+    /* News Lists */
+    .news-main {padding:39px 0 37px;}
+    .news-main .heading-btn {margin-top: 40px;}
+    .news-main h4 span::before {bottom: -11px; left: -14px;}
+    .news-grid {width: 100%;}
+    .news-grid .news-cnt {margin-bottom: 30px;}
+    .news-grid .news-cnt .h5 {padding-right: 0; margin-bottom: 15px; font-size: 1.313rem; line-height: 1.1; letter-spacing: -0.42px;}
+    .news-grid .news-cnt p {margin-bottom: 14px;}
+    .news-lists {padding: 0 0 68px 0; margin: 0 0 37px 0;}
     
 }
 
