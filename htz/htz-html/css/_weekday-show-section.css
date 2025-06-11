@@ -13,6 +13,9 @@
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
 .weekday-show-list {flex: 0 0 100%;}
+.weekday-show-section {padding: 40px 0;}
+.weekday-show-main{gap: 20px;}
+.weekday-show-section .btn-wrap .readmore{margin: 0 auto;}
 
 
 
