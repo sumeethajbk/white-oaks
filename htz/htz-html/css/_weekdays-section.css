@@ -9,8 +9,12 @@
 .weekdays-txt .cat-wrap ul li a {border-radius: none;}
 .weekdays-txt h2 span::before { left: 60px; bottom: -3px; }
 .weekdays-show .h4{margin-bottom: 0;}
-.weekdays-thumb .show-logo{position: absolute;
-  width: 92px;
-  height: 92px;
-  bottom: 80px;
-  right: 21px;}
+.weekdays-thumb .show-logo{position: absolute; width: 92px; height: 92px; bottom: 80px; right: 21px;}
+
+
+
+@media only screen and (max-width: 1199px) and (min-width: 768px){
+  .weekdays-main { gap: 40px 40px; }
+
+
+}
