@@ -85,7 +85,7 @@ jQuery(document).ready(function () {
     arrows: true,
     infinite: true,
     centerMode: true,
-    centerPadding: "0",
+    centerPadding: "10px",
     prevArrow:
       '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><i class="fa-solid fa-circle-chevron-left"></i></div>',
     nextArrow:
@@ -93,7 +93,10 @@ jQuery(document).ready(function () {
     responsive: [
       {
         breakpoint: 767,
-        settings: {},
+        settings: {
+          dots: true,
+          centerPadding: "0px",
+        },
       },
     ],
   });
