@@ -2,7 +2,7 @@
 .weekdays-wrap { padding: 40px 0; }
 .weekdays-main{ gap:40px 70px; }
 .weekdays-show{display: flex; flex-wrap: wrap; width: 100%; height: 100%; z-index: 1; flex: 0 0 calc(33.33% - 70px); flex-grow: 1; gap: 20px;}
-.weekdays-thumb-high{position: absolute;  z-index: -1; display: block; top: 0; left: 0;}
+.weekdays-thumb-high{position: absolute;  z-index: -1; display: block; top: 0; left: 0; width: 100%; height: 100%;}
 .weekdays-txt{position: relative; z-index: 1; padding: 64px; color: var(--white); max-width: 578px; min-height: 480px; justify-content: flex-end; display: flex; flex-direction: column;}
 .weekdays-show:first-child{flex: 0 0 100%}
 .weekdays-show:first-child::after{background-image: url("../images/brand_asset-mike.svg"); display: block; width: 90px; height: 90px; content:""; position: absolute; right:0; bottom:-40px;}
