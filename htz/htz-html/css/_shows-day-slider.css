@@ -5,22 +5,15 @@
 .show-slider-head span{font-size: 16px; font-weight: 500; line-height: 150%;}
 
 .day-slider{margin-bottom: 40px;}
-
-.day-box {
-  background: black;
-  color: var(--white);
-  padding: 15px;
-  border: 2px solid var(--white);
-  text-align: center;
-  cursor: pointer; margin: 0 10px;
-}
-.day-box.slick-current {
-  background: var(--optionaltxt); border: none;
-}
+.day-slider .slick-arrow{width: 32px; height: 32px;}
+.day-slider .slick-arrow i{font-size: 16px;}
+.day-box { background: black; color: var(--white); padding: 15px; border: 2px solid var(--white); text-align: center; cursor: pointer; margin: 0 10px; }
+.day-box strong{display: block; margin-top: -4px; font-size: 16px; font-weight: 600;}
+.day-box.slick-current { background: var(--optionaltxt); border: none; color:var(--black); }
 .day-box.slick-slide{width: 165px;}
 
 .day-slider .slick-arrow{top: -200px;}
-.day-slider .slick-arrow.slick-prev{left: auto; right: 60px;}
+.day-slider .slick-arrow.slick-prev{left: auto; right: 36px;}
 
 
 .show-slider .slick-list{overflow: inherit;}
