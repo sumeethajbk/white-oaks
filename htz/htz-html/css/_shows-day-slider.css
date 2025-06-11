@@ -12,7 +12,7 @@
 .day-box.slick-current { background: var(--optionaltxt); border: none; color:var(--black); }
 .day-box.slick-slide{width: 165px;}
 
-.day-slider .slick-arrow{top: -200px;}
+.day-slider .slick-arrow{top: -213px;}
 .day-slider .slick-arrow.slick-prev{left: auto; right: 36px;}
 
 
