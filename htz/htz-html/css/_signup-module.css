@@ -22,6 +22,12 @@
 .signup-module .brand_asset {left:-100px; top: -20px; right: auto; bottom: auto;}
 .signup-module .brand_asset.reverse {right:-90px; left: auto; top: auto; bottom: -88px;}
 
+.signup-module ::-webkit-input-placeholder {color: var(--signup-placeholder)!important; font-size: 1rem!important;}
+.signup-module:-moz-placeholder {color: var(--signup-placeholder)!important; font-size: 1rem!important;}
+.signup-module ::-moz-placeholder {color: var(--signup-placeholder)!important; font-size:1rem!important;}
+.signup-module :-ms-input-placeholder {color: var(--signup-placeholder)!important; font-size:1rem!important;}
+
+
 @media only screen and (max-width: 1400px){
     .signup-module .brand_asset {left:-20px;} 
     .signup-module .brand_asset.reverse {right:-10px;}

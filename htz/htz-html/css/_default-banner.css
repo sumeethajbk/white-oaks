@@ -3,7 +3,9 @@
 .default-banner-main .default-banner-text {max-width:600px; clear: both; padding:104px 0; position: relative; width: 100%;}
 
 .default-banner-main .default-banner-text h1 span {position: relative;}
-/*.default-banner-main .default-banner-text h1 span:before {content: ""; width:235px; height: 20px; display: block; position: absolute; left: -7px; bottom:3px; background:url("../images/accent-line.svg") 0 0 no-repeat; z-index: -1;}*/
+.default-banner-main .default-banner-text .cat-wrap {justify-content:flex-start; gap:20px;}
+.default-banner-main .default-banner-text .cat-wrap ul li a {border-radius: 0;}
+.default-banner-main .default-banner-text .posted-date {display: block; font-size: 0.75rem; opacity: 0.5; line-height: 1.67;}
 
 
 

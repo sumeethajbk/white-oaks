@@ -1,0 +1,26 @@
+@import url("default-page.css");
+@import url("_feature-cta-primary-section.css");
+@import url("_signup-module.css");
+
+.default-banner-main {align-items: flex-end; min-height: 680px;}
+.default-banner-main .default-banner-text {max-width: 700px;}
+.default-banner-main .default-banner-text h1 {margin-bottom: 23px;}
+
+/*-- media css starts here --*/
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .sidebar {display: none;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+
+}

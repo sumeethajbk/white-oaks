@@ -27,9 +27,11 @@
 .general-default-container .default-main {justify-content: space-between; gap:8.125%;}
 .general-default-container .default-main  h3 {padding: 13px 0 0 0;}
 .general-default-container .default-main .divider {margin:18px 0;}
+.general-default-container p:first-of-type span {font-size: 1.5rem; line-height: 1.5; display: block;}
 
 .default-inner {position: relative;}
 .default-inner .brand-icon {left: -11px; right: auto; bottom: -39px;}
+
 
 
 /* Sidebar */

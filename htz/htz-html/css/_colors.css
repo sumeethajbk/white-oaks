@@ -22,12 +22,13 @@
     --btn-bg : #ffffff;
     --btn-bg-hover: #f50000;
 
+    --signup-placeholder:#000000;
     --signup-btn-txt: #000000;
     --signup-btn-bg :  #f50000;
     --signup-btnbg-hover : #000000;
     --signup-btnbg-hover-txt: #ffffff;
     
-    --placeholder: #000000;
+    --placeholder: #ffffff;
     --readmore : #ffffff;
     --readmore-hover: #f50000; 
     
@@ -70,5 +71,9 @@
     --eventbx-anchor:#000000;
     --dashed-border:#b7b7b7;
     
+    --filter-border:rgba(0, 8, 117, 0.25);
+    --filter-atxt:#000000;
+    
+    --input:rgba(255, 255, 255, 0.25);;
     
 }
