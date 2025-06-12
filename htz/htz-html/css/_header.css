@@ -1,5 +1,4 @@
 .main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 999; transition: .3s ease-in-out; background: var(--black);}
-.main_header:after {content: ""; background:var(--input); height: 1px; width: 100%; display: block; position: absolute; bottom: 0;}
 .main_header .container {position: relative;}
 .main_header .header {padding:16px 0 3px;}
 .main_header .logo {width: 140px; position: relative;}

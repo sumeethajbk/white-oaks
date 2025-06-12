@@ -1,0 +1,11 @@
+@import url("_default-banner.css");
+
+
+
+
+
+.show-default-text{gap: 8px; margin-bottom: 20px; font-size: 12px; line-height: 100%;}
+.show-links{gap: 10px;}
+ul.shw-links{margin: 0;}
+ul.shw-links li:before{display: none;}
+ul.shw-links li a{}
