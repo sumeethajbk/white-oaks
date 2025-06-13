@@ -1,0 +1,57 @@
+@import url("_split-banner.css");
+@import url("_signup-module.css");
+
+
+/* contest Lists */
+.contests-container {width: 100%; padding:40px 0 80px 0; clear: both;}
+.contest-main {clear: both; width: 100%; position: relative; display: flex; flex-wrap: wrap; gap:32px 4.6875%;}
+.contest-main .btn-center {margin: 40px 0 0 0;}
+
+.contests-lists {gap:40px 4.3478260869565215%;}
+.contest-grid {display: inline-block; width:30.434782608695656%; vertical-align: top;}
+.contest-grid .contest-thumb {clear: both; width: 100%; position: relative; height: 157px; overflow: hidden}
+.contest-grid .contest-cnt {clear: both; width: 100%; padding:20px 0 0 0;}
+.contest-grid .contest-cnt:only-child {padding: 0;}
+.contest-grid .contest-cnt .h5 {padding-right: 5px; margin-bottom: 0;}
+.contest-grid .contest-cnt p {font-size:1rem; line-height: 1.5; margin-bottom: 8px;}
+.contest-grid .contest-cnt .posted-date {display: block; font-size: 0.75rem; opacity: 0.5; line-height: 1.67;}
+.contest-grid .contest-cnt .posted-date.big {font-size: 1rem; font-weight: 600; line-height: 1.38; opacity: 1;}
+
+
+/* Sidebar */
+.sidebar {width:300px;}
+.sidebar .side-bucket {clear: both; margin: 0 0 40px 0;}
+.sidebar .side-bucket:last-child {margin-bottom: 0;}
+.sidebar .side-bucket .ad-300 {max-width: 300px; margin-left: auto;}
+
+@media only screen and (min-width: 1024px) {
+  .contests-lt {flex: 1;}
+  
+}
+
+@media only screen and (max-width: 1199px) and (min-width:768px) {
+    .contest-grid {width: 47.8%;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px) {
+  
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  
+}
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    /* contest Lists */
+    .contest-main {gap:31px;}
+    .contest-grid {width: 100%;}
+    .contest-grid .contest-thumb {height: 51.47vw;}
+    .contest-grid .contest-cnt .h5 {padding-right: 0; margin-bottom: 15px; font-size: 1.313rem; line-height: 1.1; letter-spacing: -0.42px;}
+    .contest-grid .contest-cnt p {margin-bottom: 14px;}
+    .contest-lists {padding: 0 0 68px 0; margin: 0 0 37px 0;}
+    
+}
+

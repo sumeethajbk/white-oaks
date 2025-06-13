@@ -141,7 +141,7 @@ body .mfp-close:after {display: none;}
 .cat-wrap ul {margin: 0; font-size: 0; display: flex; flex-wrap: wrap; gap:8px;}
 .cat-wrap ul li {margin: 0; display: inline-block;}
 .cat-wrap ul li:before {display: none;}
-.cat-wrap ul li a {display: inline-block; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg); border-radius: 20px;}
+.cat-wrap ul li a {display: inline-flex; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg); border-radius: 20px; gap:8px; align-items: center;}
 .cat-wrap ul li a:hover {color: var(--cat-txt-hover);}
 
 
@@ -172,6 +172,7 @@ ul.slick-dots li.slick-active{background-color: var(--theme);}
 /* Default Thumb */
 .default-thumb {margin:64px 0 64px 0; position: relative; clear: both; width: 100%;}
 .default-thumb figure img{height: 525px;}
+.default-thumb figure figcaption {background: var(--grey);padding: 24px; font-size: 1rem; line-height: 1.5;}
 .default-thumb .fluid-width-wrapper {height: 100%;}
 .default-thumb-two {margin:64px 0 64px 0; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
 .default-thumb-two .fluid-width-wrapper {display: flex; flex-wrap: nowrap; gap:8px; align-items: stretch;}
@@ -296,7 +297,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .sharethis-inline-share-buttons .st-btn {width:56px; height: 56px!important; color: var(--sharebtn-txt); line-height: 38px!important;
 position: relative; z-index: 1; text-decoration: none; border-radius: 50%!important; background-color: var(--sharebtn-bg)!important; display: inline-block!important; text-align: center!important; cursor: pointer; margin: 0 0 0 13px!important; min-width: inherit!important; padding: 0 !important;}
 .sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
-.sharethis-inline-share-buttons {font-size: 0; display: inline-block!important; vertical-align: middle; z-index: 1 !important;}
+.sharethis-inline-share-buttons {font-size: 0; display:flex!important; vertical-align: middle; z-index: 1 !important; justify-content: space-between;}
 .sharethis-inline-share-buttons .st-btn:after {font-family: "Font Awesome 6 Brands"; font-weight: 400; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: inline-block; font-size: 24px; line-height: 54px;}
 .sharethis-inline-share-buttons .st-btn[data-network=twitter]:after {content: "\f099"; }
 .sharethis-inline-share-buttons .st-btn[data-network=facebook]:after {content: "\f39e";}
