@@ -74,6 +74,8 @@
     --filter-border:rgba(0, 8, 117, 0.25);
     --filter-atxt:#000000;
     
-    --input:rgba(255, 255, 255, 0.25);;
+    --input:rgba(255, 255, 255, 0.25);
+
+    --recent-banner-bg :  #000000;
     
 }

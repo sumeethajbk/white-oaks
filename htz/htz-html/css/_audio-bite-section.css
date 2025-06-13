@@ -45,6 +45,7 @@ ul.audio-lists li {font-size: 0.75rem; line-height: 100%;}
 ul.audio-lists {gap: 4px;}
 .load-more{ margin: auto; justify-content: center; display: flex; margin-bottom: 40px;}
 .load-more .button{width: fit-content}
+.audio-bite-section .btn-wrap .readmore{margin: 0 auto;}
 
 
 }

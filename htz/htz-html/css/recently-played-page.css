@@ -1,0 +1,19 @@
+@import url("_default-banner.css");
+@import url("_fce-module.css");
+
+.default-banner-section{background-color: var(--recent-banner-bg);}
+.default-banner-section .banner-bg:after{background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);}
+.default-banner-text h1{font-size: 3rem;}
+
+
+.recently-played-main{gap: 40px;}
+.recently-played-list{gap: 40px; margin-bottom: 10px;}
+.recently-played-lt{flex: 0 0 920px;}
+.blc-one{flex: 0 0 130px;}
+.blc-three svg{position: absolute; top: -20px; left: -20px; width: 43px; height: 39px;}
+.blc-two{width: 160px; height: 160px;}
+.blc-one .h4{margin-bottom: 10px; }
+.blc-three .h4{margin-bottom: 10px;}
+
+.recently-played-lt .ad-sm{margin: 40px auto;}
+.btn-center{margin: 20px 0;}

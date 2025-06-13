@@ -12,6 +12,8 @@
 .weekdays-thumb .show-logo{position: absolute; width: 92px; height: 92px; bottom: 80px; right: 21px;}
 .weekdays-wrap .btn-center {margin: 40px  0 0;}
 
+.weekdays-section .brand-icon{ bottom: 100px; left: auto; transform: translateX(-50%); right: -50px;}
+
 
 @media only screen and (max-width: 1199px) and (min-width: 768px){
   .weekdays-main { gap: 40px 40px; }
