@@ -1,0 +1,64 @@
+@import url("_default-banner.css");
+@import url("_fce-module.css");
+@import url("_signup-module.css");
+
+.default-banner-section{background-color: var(--recent-banner-bg);}
+.default-banner-section .banner-bg{width: 1112px; right: 0; left: auto;}
+.default-banner-section .banner-bg img{object-fit: contain;}
+.default-banner-section .banner-bg:after{background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);}
+.default-banner-text h1{font-size: 3rem;}
+
+
+.recently-played-main{gap: 40px;}
+.recently-played-list{gap: 40px; margin-bottom: 10px;}
+.recently-played-lt{flex: 0 0 920px;}
+.recently-played-rt{flex: 0 0 calc(100% - 960px);}
+.blc-one{flex: 0 0 130px;}
+.blc-three svg{position: absolute; top: -20px; left: -20px; width: 43px; height: 39px;}
+.blc-two{width: 160px; height: 160px;}
+.blc-one .h4{margin-bottom: 10px; }
+.blc-three .h4{margin-bottom: 10px;}
+.blc-three{flex: 1}
+
+.recently-played-lt .ad-sm{margin: 40px auto;}
+.btn-center{margin: 20px 0 60px;}
+
+
+
+ @media only screen and (max-width: 1279px) and (min-width: 1024px){
+    .recently-played-main{gap: 20px;}
+    .recently-played-list{gap: 20px;}
+    .recently-played-lt{flex: 0 0 720px;}
+    .recently-played-rt{flex: 0 0 calc(100% - 760px);}
+    .blc-one .h4{font-size: 1.5rem;}
+    .blc-three .h4{font-size: 1.5rem;}
+    .blc-three{flex: 300px}
+ }
+
+ @media only screen and (max-width: 1023px) and (min-width: 200px){
+    .recently-played-main{display: block;}
+    .recently-played-lt{flex: 0 0 100%;}
+    .recently-played-rt{flex: 0 0 100%;}
+     .blc-one .h4{font-size: 1.5rem;}
+    .blc-three .h4{font-size: 1.5rem;}
+    .recently-played-rt{display: flex; justify-content: space-between;}
+    .recently-played-rt .ad-300{width: 300px; height: 250px;}
+
+    .default-banner-main {min-height: 420px;}
+    .default-banner-section .banner-bg { width: inherit; top:-82px}
+    .default-banner-text h1 {font-size: 2.375rem;}
+    .default-banner-main .default-banner-text { padding: 40px 0 32px;}
+    .default-banner-main .default-banner-text p { font-size: 1.125rem;}
+
+
+
+ }
+
+ @media only screen and (max-width: 767px) and (min-width: 200px){
+   .blc-two { width: 80px; height: 80px; order: 1; }
+    .blc-one{order: 2; display: flex; flex: inherit;}
+    .blc-three{order: 3}
+
+
+ }
+

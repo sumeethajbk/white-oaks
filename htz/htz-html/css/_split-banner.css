@@ -1,0 +1,37 @@
+/* Banner */
+.split-banner-section {clear: both; width: 100%; position: relative; overflow: hidden; padding: 40px 0 0;}
+.split-banner-main {gap:32px; min-height: 480px;}
+.split-banner-main .split-banner-text:only-child {flex-grow: 1;}
+.split-banner-main .split-banner-text {clear: both; position: relative; width:386px; display: flex; flex-wrap: wrap; align-items: center; z-index: 1;}
+.split-banner-main .split-banner-text .split-txt-inner {width: 100%;}
+.split-banner-main .split-banner-text h1 {font-size: 2.5rem; line-height: 1.2; letter-spacing: -0.8px; margin-bottom: 15px;}
+.split-banner-main .split-banner-text h1 span:before {left: -63px; bottom: 1px;}
+.split-banner-main .split-banner-text .cat-wrap {margin: 0 0 17px 0;}
+.split-banner-main .split-banner-text .cat-wrap ul li a {border-radius: 0; text-transform: uppercase;}
+.split-banner-main .split-banner-text .cat-wrap ul li a svg {transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1);}
+.split-banner-main .split-banner-text .cat-wrap ul li a:hover svg path {fill:var(--cat-txt-hover);}
+.split-banner-main .split-banner-text p {margin-bottom: 32px;}
+.split-banner-main .split-banner-text .contest-date {font-size: 0.75rem; color: var(--optionaltxt); font-weight: bold; margin: 0 0 16px 0; display: block; line-height: 1;}
+.split-banner-main .split-banner-text .brand-icon {top: -36px; right: -45px; z-index: -1;}
+
+.split-banner-main .split-banner-thumb {flex:1; position: relative; display: flex; flex-wrap: wrap; z-index: 1; overflow: hidden;}
+.split-banner-main .split-banner-thumb .brand_asset {right: -14px; top: -53px;}
+.split-banner-main .split-banner-thumb .split-img {display: flex; flex-wrap: wrap; height: 100%; width: 100%;}
+
+
+/*-- media css starts here --*/
+
+@media only screen and (max-width: 1023px) and (min-width:200px) {
+.split-banner-main .split-banner-thumb .brand_asset {right: -51px; top: -77px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .split-banner-main .split-banner-text {width: 300px;} 
+}
+
+@media only screen and (max-width: 767px) and (min-width:200px) {
+    .split-banner-main .split-banner-text {width: 100%;}
+    .split-banner-main .split-banner-text h1 {font-size: 2rem; line-height: 1.19; letter-spacing: -0.64px;}
+    .split-banner-main .split-banner-text h1 span::before {right: -5px; bottom: -8px; left: 0;}
+    .split-banner-main .split-banner-text p {font-size: 1rem; line-height: 1.5;}
+}

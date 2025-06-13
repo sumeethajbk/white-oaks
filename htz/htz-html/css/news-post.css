@@ -1,0 +1,60 @@
+@import url("default-page.css");
+@import url("_feature-cta-primary-section.css");
+@import url("_signup-module.css");
+
+.default-banner-main {align-items: flex-end; min-height: 680px;}
+.default-banner-main .default-banner-text {max-width: 700px; padding: 46px 0;}
+.default-banner-main .default-banner-text h1 {margin-bottom: 23px;}
+.default-banner-main .default-banner-text h1 span:before {left: -79px; bottom: 2px;}
+.default-banner-section .banner-bg::after {background: linear-gradient(248deg, var(--banner-shadow) 51.58%, var(--banner-shadow-100) 89.24%), linear-gradient(0deg, var(--banner-shadow-20) 0%, var(--banner-shadow-20) 100%);}
+
+.general-default-container {padding: 80px 0 80px 0;}
+.general-default-container .default-main {gap: 6.25%;}
+.general-default-container .default-main h3 span:before {left: -21px; bottom: -2px;}
+.general-default-container .default-main h4 span:before {left: -10px; bottom: -2px;}
+.general-default-container .default-main .divider {margin: 48px 0;}
+.general-default-container .default-main .default-thumb {margin:48px 0 47px 0;}
+.general-default-container .default-main .default-thumb figure img {height: 484px;}
+.general-default-container .default-main .default-thumb figure figcaption {position: relative; top: -1px;}
+
+.general-default-container .default-main .single-cta {margin: 47px 0 49px;}
+.general-default-container .micro-cta-module {margin: 47px 0 48px 0;}
+.general-default-container .accordion-module {padding:0 0 50px 0;}
+.general-default-container .default-main p + .ad-sm-wrap {margin: 80px 0 0 0;}
+.general-default-container .default-main .default-inner .brand-icon {left: -11px; right: auto; bottom: inherit; top: -76px;}
+
+.sidebar {width: 340px;}
+
+/*-- media css starts here --*/
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .default-banner-main {min-height: 480px;}
+    .general-default-container {padding: 80px 0 40px 0;}
+    .sidebar {display: none;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .default-banner-main .default-banner-text h1 {margin-bottom: 24px;}
+    .default-banner-main .default-banner-text {padding: 40px 0 51px;}
+    
+    .general-default-container {padding:36px 0 61px;}
+    .general-default-container .general-default-inner h3 {padding: 11px 0 0 0;}
+    .general-default-container .default-main .divider {margin: 20px 0;}
+    .general-default-container .default-main .default-thumb figure img {height: auto;}
+    .general-default-container .default-main .default-thumb {margin: 40px 0 40px 0;}
+    
+    .general-default-container .default-main .single-cta {margin: 16px 0 19px;}
+    .general-default-container .default-main h4 span::before {left: -10px; bottom: -13px;}
+    .general-default-container .micro-cta-module {margin: 27px 0 20px 0;}
+    .general-default-container .accordion-module {padding: 0 0 20px 0;}
+    .general-default-container .default-main p + .ad-sm-wrap {margin: 60px 0 0 0;}
+}

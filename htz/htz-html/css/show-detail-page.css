@@ -1,0 +1,39 @@
+@import url("_default-banner.css");
+@import url("_show-detail-section.css");
+@import url("_audio-bite-section.css");
+
+
+
+
+.default-banner-main {min-height: 430px; justify-content: space-between;}
+.default-banner-main .default-banner-text {margin-bottom: auto; padding: 80px 0;}
+.default-banner-text h1{font-size: 3rem; letter-spacing: normal;}
+.default-banner-text p{font-size: 20px; line-height: 150%;}
+.default-show-logo{width: 270px; height: 270px;}
+
+.show-default-text{gap: 8px; margin-bottom: 8px; font-size: 12px; line-height: 100%;}
+.show-link-list { gap: 10px; margin-top: 36px;}
+.show-links{gap: 10px; }
+ul.shw-links{margin: 0; flex: 0 0 88px;}
+ul.shw-links li:before{display: none;}
+ul.shw-links li:first-child{margin-left: 0;}
+ul.shw-links li {display: inline-block; margin: 0 0 0 8px;}
+ul.shw-links li a {font-size: 1.125rem; color: var(--black); width: 40px; height: 40px; position: relative; z-index: 1; line-height: 1; border-radius: 50%; background-color: var(--white); display: inline-flex; justify-content: center; align-items: center;}
+ul.shw-links li a i{font-family: 1.125rem; color: var(--black);}
+
+.show-link-list .button{padding: 5px 25px 6px 20px;}
+
+ul.shw-links  li a:hover { background-color: var(--theme); color: var(--white); }
+ul.shw-links li a:hover i { color: var(--white); }
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .default-banner-main{flex-direction: column-reverse; align-items: flex-start; padding: 80px 16px 40px;}
+.default-show-logo { width: 64px; height: 64px; }
+.default-banner-main .default-banner-text {
+ 
+  padding: 32px 0 0;}
+
+
+
+}

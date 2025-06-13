@@ -235,5 +235,22 @@ jQuery(document).ready(function () {
       jQuery(this).siblings(".frm_error").hide();
     }
   });
+    
+      if (jQuery(window).width() <= 1023) {
+  jQuery(document).on('click', '.heading_mobile_menu', function (e) {
+    e.preventDefault();
+    jQuery(this).toggleClass('active');
+    jQuery('ul.filter-links').slideToggle();
+  });
+
+  jQuery(document).on('click', '.filter-links li a', function (e) {
+    e.preventDefault();
+    var current_val = jQuery(this).text();
+    
+    jQuery('ul.filter-links').slideUp(); 
+    jQuery('.heading_mobile_menu').text(current_val).removeClass('active');
+  });
+}
+
 
 });

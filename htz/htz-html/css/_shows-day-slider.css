@@ -36,6 +36,8 @@
     .day-slider .slick-arrow{top: -213px;}
     .day-slider .slick-arrow.slick-prev{left: auto; right: 36px;}
     .day-slider.hide-in-tablet{display: none;}
+
+    .shows-day-slider .brand-icon{left: 50%; transform: translateX(-50%);}
 }
 @media only screen and (min-width: 1024px){
 }

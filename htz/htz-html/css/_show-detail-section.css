@@ -1,0 +1,59 @@
+.show-detail-main{padding: 80px 0 40px; gap: 20px;}
+.show-detail-lt{flex: 0 0 920px;}
+.show-detail-rt {flex: 0 0 calc(100% - 940px);}
+.show-detail-auth-list{gap: 40px; margin-bottom: 40px;}
+.show-detail-auth-img{flex: 0 0 240px; height: 240px; border-radius: 50%;}
+.show-detail-auth-info { flex: 0 0 calc(100% - 280px); }
+.show-detail-auth-info p{font-size: 16px; font-weight: 400; line-height: 150%;}
+.show-detail-auth-info h5{margin-bottom: 24px;}
+
+.show-detail-auth-img ul.show-links{ width: 100px;}
+.show-detail-auth-img picture{position: relative;}
+ul.show-links{margin: 0; flex: 0 0 88px;}
+ul.show-links li:before{display: none;}
+ul.show-links li:first-child{margin-left: 0;}
+ul.show-links li {display: inline-block; margin: 0 0 0 8px;}
+ul.show-links li a {font-size: 1.125rem; color: var(--black); width: 40px; height: 40px; position: relative; z-index: 1; line-height: 1; border-radius: 50%; background-color: var(--white); display: inline-flex; justify-content: center; align-items: center;}
+ul.show-links li a i{font-size: 1.125rem; color: var(--black);}
+ul.show-links li:first-child {top: -48px; position: absolute; right: 41px; }
+ ul.show-links li:nth-child(2){top: -28px; position: absolute; right: -15px;}
+
+ .show-detail-rt .brand-icon { display: block; width: 346px; height: 405px; top: -68px;}
+
+ ul.show-links  li a:hover { background-color: var(--theme); color: var(--white); }
+ul.show-links li a:hover i { color: var(--white); }
+
+
+/* media starts here */
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+
+.show-detail-lt { flex: 0 0 620px; }
+.show-detail-rt { flex: 0 0 calc(100% - 640px); }
+.show-detail-auth-img { flex: 0 0 140px; height: 140px;}
+.show-detail-auth-info { flex: 0 0 calc(100% - 180px); }
+
+
+
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+.show-detail-main {display: block;}
+.show-detail-rt {display: flex; justify-content: space-between; }
+.ad-300{width: 300px;}
+
+
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.show-detail-auth-list {display: block;}
+.show-detail-auth-img { flex: 0 0 240px; height: 220px; width: 220px; margin: 0 auto 46px;}
+.show-detail-main { padding: 40px 0 40px;}
+.show-detail-rt{display: block;}
+ .ad-300 {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;}
+
+
+}

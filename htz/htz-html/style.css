@@ -45,7 +45,7 @@ body {font-family: "Inter", sans-serif; color:var(--body-text); font-size:1.125r
 
 @keyframes rotateInfinite {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  100% {transform: rotate(-360deg);}
 }
 
 
@@ -70,7 +70,7 @@ h2 span:before {left: -13px; bottom: -13px;}
 h4 span:before, .h4 span:before {left: -17px; bottom: -13px;}
 
 
-section p a, section li a {text-decoration: underline; font-weight: bold;}
+section p a, section li a {font-weight: bold;}
 section ol:last-child, section ul:last-child {margin-bottom: 0;}
 
 
@@ -141,7 +141,7 @@ body .mfp-close:after {display: none;}
 .cat-wrap ul {margin: 0; font-size: 0; display: flex; flex-wrap: wrap; gap:8px;}
 .cat-wrap ul li {margin: 0; display: inline-block;}
 .cat-wrap ul li:before {display: none;}
-.cat-wrap ul li a {display: inline-block; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg); border-radius: 20px;}
+.cat-wrap ul li a {display: inline-flex; color: var(--cat-txt); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 4px 9px 4px 8px; z-index: 1; background: var(--cat-bg); border-radius: 20px; gap:8px; align-items: center;}
 .cat-wrap ul li a:hover {color: var(--cat-txt-hover);}
 
 
@@ -170,7 +170,10 @@ ul.slick-dots li.slick-active{background-color: var(--theme);}
 
 
 /* Default Thumb */
-.default-thumb {margin:64px 0 64px 0; position: relative; clear: both; width: 100%; min-height: 525px; display: flex; flex-wrap: wrap;}
+.default-thumb {margin:64px 0 64px 0; position: relative; clear: both; width: 100%;}
+.default-thumb figure img{height: 525px;}
+.default-thumb figure figcaption {background: var(--grey);padding: 24px; font-size: 1rem; line-height: 1.5;}
+.default-thumb .fluid-width-wrapper {height: 100%;}
 .default-thumb-two {margin:64px 0 64px 0; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
 .default-thumb-two .fluid-width-wrapper {display: flex; flex-wrap: nowrap; gap:8px; align-items: stretch;}
 .default-thumb-two .default-thumb-flex {flex: 1 1 auto; height: 100%;}
@@ -267,21 +270,18 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .brand-star {display: block; width: 48px; height: 48px;}
 
 /* Heading */
-.heading {clear: both; padding:0 0 39px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
+.heading {clear: both; padding:0 0 39px; width: 100%; justify-content: space-between; align-items: center; display: flex; flex-wrap: wrap;}
 .heading .h1, .heading .h2, .heading .h3, .heading .h4, .heading h2, .heading h3, .heading h4 {margin-bottom: 0;}
 .heading .h4 span:before {left: -13px; bottom: -5px;}
 .heading-lt {flex-grow: 1; width: 60%; transition: all .3s ease-in-out;}
 .heading-rt {display: flex; justify-content: flex-end; flex-grow: 1;}
 
 .heading-rt {flex-grow: 1;  width: 40%;}
-.heading-rt:only-child {justify-content: flex-start;}
 .heading-rt .btn-wrap {justify-content: flex-end; gap:45px;}
 .heading-rt .btn-wrap .readmore {gap:15px;}
 
-.heading-rt form {justify-content: flex-end; width: 100%;}
-.heading-rt .form-field {margin:0 0 0 22px; width:29.71%; position: relative;}
-.heading-rt .form-field:first-child {margin-left: 0}
-.heading-rt.sch-form .form-field { width: 100%; }
+.heading-rt .heading-form {justify-content: flex-end; width: 316px;}
+.heading-rt .form-field {position: relative; margin: 0;}
 
 /* Full & Fluid width */
 .fluid-width {width: 100vw!important; left: 50%; position: relative; margin-left: -50vw;}
@@ -297,7 +297,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .sharethis-inline-share-buttons .st-btn {width:56px; height: 56px!important; color: var(--sharebtn-txt); line-height: 38px!important;
 position: relative; z-index: 1; text-decoration: none; border-radius: 50%!important; background-color: var(--sharebtn-bg)!important; display: inline-block!important; text-align: center!important; cursor: pointer; margin: 0 0 0 13px!important; min-width: inherit!important; padding: 0 !important;}
 .sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
-.sharethis-inline-share-buttons {font-size: 0; display: inline-block!important; vertical-align: middle; z-index: 1 !important;}
+.sharethis-inline-share-buttons {font-size: 0; display:flex!important; vertical-align: middle; z-index: 1 !important; justify-content: space-between;}
 .sharethis-inline-share-buttons .st-btn:after {font-family: "Font Awesome 6 Brands"; font-weight: 400; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: inline-block; font-size: 24px; line-height: 54px;}
 .sharethis-inline-share-buttons .st-btn[data-network=twitter]:after {content: "\f099"; }
 .sharethis-inline-share-buttons .st-btn[data-network=facebook]:after {content: "\f39e";}
@@ -347,6 +347,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
     .heading_mobile_menu.active::after {transform:translateY(-50%) rotate(-180deg);}
     
     .btn-full .btn-wrap {justify-content: center; gap: 28px;}
+    .btn-center {padding: 0 16px;}
     
 }
 
@@ -375,8 +376,9 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
     .frm_half {width:100%; margin-left: 0; margin-right: 0;} 
     
     
-    .heading-lt { flex: inherit; width: 60%; flex-grow: 1;}
-    .heading-rt {justify-content: flex-start;}
+    .heading-lt {width: 100%;}
+    .heading-rt {justify-content: flex-start; width: 100%;}
+    .heading-rt .heading-form {width: 100%;}
 
     /* Divider */
     .icon {margin: 0 48px 0 48px;}
@@ -384,12 +386,14 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
     .ad-big{padding: 0 12px;}
     
     .default-thumb {min-height: 30vw; margin: 40px 0 40px 0; width: 100% !important; left: 0;}  
+    .default-thumb figure img {height: auto;}
     .default-thumb-two {margin: 40px 0 40px 0; width: 100% !important; left: 0;}
     .default-thumb-two .fluid-width-wrapper {flex-wrap: wrap;}
     .default-thumb-two .default-thumb-flex {flex: 100%; height: 58.65vw; width: 100%;}
     
     .fluid-width {width: 100%!important; left: 0; margin-left: 0;}
     .btn-full {width: 100%;}
+    
 }
 
 

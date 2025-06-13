@@ -83,7 +83,7 @@ hr {display: block;  height: 2px; width: 100%; vertical-align: middle; margin:40
 ::-moz-selection {background-color: var(--brand-green); color: #fff;}
 
 
-input, textarea, select {outline: 0; width: 100%; font-size: 1rem; line-height: normal; background:transparent; box-shadow: none; padding: 14px 16px 14px; vertical-align: middle; font-weight: bold; height: auto; transition: all .5s ease-in-out; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: 0 none; border-radius: 0;}
+input, textarea, select {outline: 0; width: 100%; font-size: 1rem; line-height: 1; background:var(--input); box-shadow: none; padding:14px 32px 15px; vertical-align: middle; font-weight: bold; height: auto; transition: all .5s ease-in-out; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: 0 none; border-radius:40px;}
 select {padding:14px 46px 14px 16px;}
 textarea {width: 100%; resize: none; height: 150px;}
 input:focus, textarea:focus {outline: 0;}
@@ -105,13 +105,14 @@ button:focus, .button:focus, button:active, .button:active {background-color: va
 .button.normal-btn {padding: 10px 32px;  letter-spacing: -0.16px; line-height: 1.5; font-weight: 700; font-size: 1rem;}
 .button.normal-btn:after {display: none;}
 
-input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width: 24px; height: 24px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1;}
+input[type="search"] {padding:16px 50px 18px 32px; font-size: 0.75rem ; color: var(--white); font-weight: bold;}
+input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:32px; top:0; bottom: 0; padding: 0 !important; width: 16px; height: 16px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1;}
 
 
-::-webkit-input-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
-:-moz-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
-::-moz-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
-:-ms-input-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+::-webkit-input-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 0.75rem!important; overflow: visible;}
+:-moz-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 0.75rem!important; overflow: visible;}
+::-moz-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 0.75rem!important; overflow: visible;}
+:-ms-input-placeholder {color: var(--placeholder)!important; font-family: "Inter", sans-serif; opacity: 1!important; font-size: 0.75rem!important; overflow: visible;}
 
 
 embed, iframe, object, video {margin-bottom: 7px; max-width: 100%; border-radius: 0;}

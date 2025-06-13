@@ -17,7 +17,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .micro-cta-main {min-height: 415px; align-items: flex-end;}
     .micro-cta-main .h4 {margin-bottom:32px;}
-    .micro-cta-main .h4 span::before {left:-21px; bottom: -6px;}
+    .micro-cta-main .h4 span::before {left:-21px; bottom: -6px; z-index: -1;}
     .micro-cta-main .micro-cta-text {padding: 40px 24px 18px; max-width: 100%;} 
     .micro-cta-main .micro-cta-text p {margin-bottom: 24px;}
     .micro-cta-main .micro-cta-text .btn-wrap {justify-content: center; gap:13px;}
