@@ -30,12 +30,16 @@
 
 /* media css starts here */
 @media only screen and (min-width: 768px){
+    .day-slider{display: flex; gap: 20px;}
+    .day-js-slide{display: flex; gap: 20px;}
     [data-slide-show]:not(:first-child){display: none;}
     .day-slider.slick-slider .slick-slide{display: flex; gap: 20px;}
     .day-box.slick-slide{width: 165px;}
     .day-slider .slick-arrow{top: -213px;}
     .day-slider .slick-arrow.slick-prev{left: auto; right: 36px;}
     .day-slider.hide-in-tablet{display: none;}
+
+    .shows-day-slider .brand-icon{left: 50%; transform: translateX(-50%);}
 }
 @media only screen and (min-width: 1024px){
 }
@@ -47,4 +51,5 @@
     .day-box.slick-slide{width: 203px; opacity: 0;}
     .day-box.slick-current{opacity: 1;}
     .show-slider{flex-direction: column; gap: 24px;}
+    .day-box:not(:first-child){display: none;}
 }

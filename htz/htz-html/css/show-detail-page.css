@@ -25,3 +25,15 @@ ul.shw-links li a i{font-family: 1.125rem; color: var(--black);}
 
 ul.shw-links  li a:hover { background-color: var(--theme); color: var(--white); }
 ul.shw-links li a:hover i { color: var(--white); }
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .default-banner-main{flex-direction: column-reverse; align-items: flex-start; padding: 80px 16px 40px;}
+.default-show-logo { width: 64px; height: 64px; }
+.default-banner-main .default-banner-text {
+ 
+  padding: 32px 0 0;}
+
+
+
+}

@@ -2,7 +2,7 @@
 .weekday-show-main{gap:20px 40px;}
 .weekday-show-list{flex: 0 0 calc(25% - 30px); display: flex; gap: 20px; flex-direction: column;}
 
-
+.weekday-show-section .brand-icon{top: -80px; left: -80px; }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px){
 

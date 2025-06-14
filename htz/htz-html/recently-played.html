@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en-CA" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+  <meta name="keywords" content="" />
+  <title>Recently Played : Htz</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/svg" sizes="55.9" href="images/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/web-app-manifest-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/web-app-manifest-512x512.png" />
+  <script src="https://kit.fontawesome.com/4a8777acf0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/recently-played-page.css" media="all" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="page-template-home">
+  <div id="main">
+    <header id="main_header" class="main_header">
+      <div class="container">
+        <div class="header flex">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Htz Logo" /></a>
+          </div>
+          <div class="toggle_button flex flex-center">
+            <span class="line line1"></span> <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="header_right mobile_menu flex">
+            <div class="header-btm">
+              <nav class="navigation mobile_menu">
+                <ul class="main_menu">
+                  <li class="current-menu-item menu-item-has-children flex-menu" id="menu-item-45">
+                    <a href="#">Shows</a>
+                  </li>
+                  <li><a href="#">Contests</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Events</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Features</a>
+                  </li>
+                  <li><a href="#">Recently Played</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+
+              <div class="hdr-sm hide-in-desktop">
+                <ul>
+                  <li>
+                    <a href="#" class="flex flex-center"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex flex-center"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex flex-center"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex flex-center"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex flex-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of main header -->
+
+    <main id="mainContent">
+
+      <section class="default-banner-section pos-relative">
+        <div class="banner-bg">
+          <picture class="object-fit">
+            <source srcset="images/recently-played-thumb@2x.png" media="(min-width:768px)">
+            <img src="images/recent-played-mob@2x.png" alt="Default Banner">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="default-banner-main flex">
+            <div class="default-banner-text">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.0119 4.92165C15.6098 5.16929 15.9996 5.75272 15.9996 6.39985V25.5998C15.9996 26.247 15.6098 26.8304 15.0119 27.078C14.414 27.3257 13.7258 27.1888 13.2682 26.7312L7.33687 20.7998H3.19961C2.31596 20.7998 1.59961 20.0835 1.59961 19.1998V12.7999C1.59961 11.9162 2.31596 11.1999 3.19961 11.1999H7.33687L13.2682 5.26848C13.7258 4.81088 14.414 4.674 15.0119 4.92165Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.4501 4.6864C24.0751 4.06157 25.088 4.06157 25.713 4.6864C28.6066 7.58008 30.3992 11.5823 30.3992 16.0001C30.3992 20.4179 28.6066 24.4202 25.713 27.3138C25.088 27.9386 24.0751 27.9386 23.4501 27.3138C22.8253 26.689 22.8253 25.6759 23.4501 25.0511C25.7683 22.733 27.1992 19.5352 27.1992 16.0001C27.1992 12.465 25.7683 9.26723 23.4501 6.94913C22.8253 6.3243 22.8253 5.31123 23.4501 4.6864ZM18.9247 9.21189C19.5495 8.58704 20.5626 8.58704 21.1874 9.21189C22.0288 10.0533 22.7154 11.0512 23.1997 12.1595C23.7144 13.3377 23.9992 14.6377 23.9992 16.0001C23.9992 18.6506 22.9229 21.0528 21.1874 22.7884C20.5626 23.4132 19.5495 23.4132 18.9247 22.7884C18.2999 22.1635 18.2999 21.1504 18.9247 20.5256C20.0847 19.3656 20.7992 17.7679 20.7992 16.0001C20.7992 15.0869 20.609 14.2224 20.2674 13.4407C19.9453 12.7035 19.4875 12.0374 18.9247 11.4746C18.2999 10.8498 18.2999 9.83672 18.9247 9.21189Z"
+                  fill="white" />
+              </svg>
+              <h1><span>Recently</span> Played</h1>
+              <p>A short excerpt can optionally appear here to introduce the page euismod cras porttitor felis malesuada
+                quam aliquet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of default banner -->
+
+      <section class="recently-played-section">
+        <div class="container pos-relative">
+          <div class="brand-icon pos-absolute">
+            <figure class="object-fit"> <img src="images/brand-icon.svg" alt="Brand Icon" title="Brand Icon"> </figure>
+          </div>
+          <div class="recently-played-main flex pos-relative">
+            <div class="recently-played-lt">
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 6:15 PM </div>
+                  <span class="optional-text">04-15-2028</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-one@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">Take On Me</div>
+                  <span class="optional-text">a-ha!</span>
+                </div>
+              </div>
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 5:45 PM </div>
+                  <span class="optional-text">06-30-2028</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-two@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">Enjoy the Silence</div>
+                  <span class="optional-text">Depeche Mode</span>
+                </div>
+              </div>
+
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 6:30 PM </div>
+                  <span class="optional-text">05-01-2028</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-three@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">(I Just) Fell In Your Arms</div>
+                  <span class="optional-text">Cutting Crew</span>
+                </div>
+              </div>
+
+              <div class="ad-sm">
+                <figure class="object-fit" role="none"> <img src="images/ad-728x90@2x.png" alt="Ad" title="Ad">
+                </figure>
+              </div>
+
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 7:15 PM </div>
+                  <span class="optional-text">03-31-2027</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-one@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">L’Amour Tojours</div>
+                  <span class="optional-text">Gigi D’Agostino</span>
+                </div>
+              </div>
+
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 7:30 PM</div>
+                  <span class="optional-text">03-31-2027</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-five@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">The Rythm of the Night</div>
+                  <span class="optional-text">Corona</span>
+                </div>
+              </div>
+
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 8:00 PM</div>
+                  <span class="optional-text">03-31-2027</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-six@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">Around the World (La La La La La La)</div>
+                  <span class="optional-text">ATC</span>
+                </div>
+              </div>
+
+              <div class="recently-played-list flex flex-vcenter">
+                <div class="blc-one">
+                  <div class="h4"> 8:30 PM</div>
+                  <span class="optional-text">03-31-2027</span>
+                </div>
+                <div class="blc-two">
+                  <figure class="object-fit">
+                    <img src="images/recent-seven@2x.jpg" alt="recent-thumb">
+                  </figure>
+                </div>
+                <div class="blc-three pos-relative">
+                  <svg width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                      d="M24.615 38.0165V19.692C24.615 14.6778 26.3016 10.4842 29.6747 7.11101C33.1391 3.64667 37.8342 1.27633 43.76 0V12.1708C41.4808 12.9001 39.9766 13.8118 39.2472 14.9058C38.5179 15.9086 38.1077 17.1849 38.0165 18.7348H43.76V38.0165H24.615ZM0 38.0165V19.692C0 14.6778 1.68658 10.4842 5.05975 7.11101C8.52408 3.64667 13.2192 1.27633 19.145 0V12.1708C16.957 12.9001 15.4527 13.8118 14.6322 14.9058C13.9029 15.9086 13.4927 17.1849 13.4015 18.7348H19.145V38.0165H0Z"
+                      fill="white" />
+                  </svg>
+                  <div class="h4">Call on Me</div>
+                  <span class="optional-text">Eric Prydz</span>
+                </div>
+              </div>
+
+              <div id="load-more" class="btn-center"><span class="loader"></span>
+                <div class="load-more"><span class="button">Load more
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.12266 11.4123C7.4556 11.0357 7.18439 10.4476 6.67769 10.4476H5.16065C5.15077 10.2996 5.14524 10.1504 5.14524 10C5.14524 6.27284 8.22026 3.24061 12 3.24061C13.8164 3.24061 15.4698 3.9411 16.6976 5.08222L18.8368 2.61447C16.9642 0.925261 14.5543 0 12 0C9.29121 0 6.74457 1.04021 4.82916 2.92892C2.91379 4.81768 1.85891 7.32889 1.85891 9.99998C1.85891 10.1497 1.8627 10.2989 1.8693 10.4476H0.591489C0.0847933 10.4476 -0.186468 11.0356 0.14652 11.4122L3.63457 15.3575L7.12266 11.4123Z"
+                        fill="black"></path>
+                      <path
+                        d="M23.8535 9.50998L20.3655 5.56468L16.8774 9.50998C16.5445 9.8866 16.8157 10.4746 17.3224 10.4746H18.8376C18.5897 13.9812 15.6179 16.7594 12 16.7594C10.4207 16.7594 8.96468 16.2297 7.80437 15.3415L5.66505 17.8094C7.45724 19.2286 9.66836 20 12.0001 20C14.7089 20 17.2555 18.9598 19.1709 17.0711C20.9724 15.2946 22.0124 12.9675 22.1297 10.4747H23.4086C23.9152 10.4746 24.1864 9.8866 23.8535 9.50998Z"
+                        fill="black"></path>
+                    </svg>
+                  </span></div>
+              </div>
+
+              <div class="ad-sm">
+                <figure class="object-fit" role="none"> <img src="images/ad-728x90@2x.png" alt="Ad" title="Ad">
+                </figure>
+              </div>
+
+            </div>
+            <div class="recently-played-rt pos-relative">
+              <div class="ad-300">
+                <figure class="object-fit" role="none"> <img src="images/ad-300x250@2x.png" alt="Ad" title="Ad"> </figure>
+              </div>
+              <div class="ad-300">
+                <figure class="object-fit" role="none"> <img src="images/ad-300x250@2x.png" alt="Ad" title="Ad"> </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fce-module">
+      <div class="container">
+        <div class="heading flex">
+          <div class="heading-lt">
+            <div class="h4"><span>Featured</span> Contests &amp; Events</div>
+          </div>
+          <div class="heading-rt hide-in-mobile hide-in-tablet">
+            <div class="btn-wrap"> <a href="#" class="readmore" aria-label="button">View All Contests</a><a href="#" class="readmore" aria-label="button">View All Events</a> </div>
+            <!-- end of btn wrap --> 
+          </div>
+        </div>
+        <!-- end of heading -->
+        <div class="fce-wrap flex">
+          <div class="fce-top-lt">
+            <div class="fce-post pos-relative">
+              <div class="fce-thumb"> <a href="#">
+                <figure class="object-fit" role="none"> <img src="images/contest-big@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
+                </a> </div>
+              <!-- end of fce thumb -->
+              <div class="fce-txt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Featured Contest</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <h2><a href="#">Contest <span>Title Here</span></a></h2>
+                <p>A brief introduction could appear here if necessary at netus elit convallis.</p>
+              </div>
+            </div>
+            <!-- end of fce post --> 
+          </div>
+          <!-- end of fce top lt -->
+          <div class="fce-top-rt">
+            <div class="fce-post pos-relative">
+              <div class="fce-thumb"> <a href="#">
+                <figure class="object-fit" role="none"> <img src="images/contest-one@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
+                </a> </div>
+              <!-- end of fce thumb -->
+              <div class="fce-txt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <div class="h6"><a href="#">The Featured Event Title Appears Here</a></div>
+              </div>
+              <!-- end of fce txt --> 
+            </div>
+            <!-- end of fce post -->
+            <div class="fce-post pos-relative">
+              <div class="fce-thumb"> <a href="#">
+                <figure class="object-fit" role="none"> <img src="images/contest-two@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
+                </a> </div>
+              <!-- end of fce thumb -->
+              <div class="fce-txt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <div class="h6"><a href="#">The Featured Event Title Appears Here</a></div>
+              </div>
+              <!-- end of fce txt --> 
+            </div>
+            <!-- end of fce post -->
+            <div class="fce-post pos-relative">
+              <div class="fce-thumb"> <a href="#">
+                <figure class="object-fit" role="none"> <img src="images/contest-three@2x.jpg" alt="Featured Contests &amp; Events Thumb" title="Featured Contests &amp; Events Thumb"> </figure>
+                </a> </div>
+              <!-- end of fce thumb -->
+              <div class="fce-txt">
+                <div class="cat-wrap">
+                  <ul role="navigation">
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </div>
+                <!-- end of cat wrap -->
+                <div class="h6"><a href="#">The Featured Event Title Appears Here</a></div>
+              </div>
+              <!-- end of fce txt --> 
+            </div>
+            <!-- end of fce post --> 
+          </div>
+          <!-- end of fce top rt --> 
+        </div>
+        <!-- end of fce wrap -->
+        <div class="btn-full hide-in-desktop">
+          <div class="btn-wrap"> <a href="#" class="readmore" aria-label="button">View All Contests</a><a href="#" class="readmore" aria-label="button">View All Events</a> </div>
+          <!-- end of btn wrap --> 
+        </div>
+      </div>
+    </section>
+
+   <section class="signup-module">
+      <div class="container pos-relative">
+        <div class="brand_asset pos-absolute">
+          <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
+        </div>
+        <!-- end of brand_asset -->
+        <div class="brand_asset reverse pos-absolute">
+          <figure class="object-fit"> <img src="images/brand_asset.svg" alt="Brand Icon" title="Brand Icon"> </figure>
+        </div>
+        <!-- end of brand_asset -->
+        <div class="signup-wrap flex">
+          <div class="signup-lt"> <span class="optional-text">Newsletter Signup</span>
+            <h4>A short but persuasive headline aimed at driving signup <span>conversions.</span></h4>
+          </div>
+          <!-- end of signup lt -->
+          <div class="signup-rt">
+            <div class="signup-form">
+              <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_2_container">
+                <form enctype="multipart/form-data" method="post" class="frm-show-form  frm_js_validate  frm_pro_form " id="form_footer-signup" style="overflow-x: visible;">
+                  <div class="frm_form_fields ">
+                    <fieldset>
+                      <div class="frm_fields_container">
+                        <input type="hidden" name="frm_action" value="create">
+                        <input type="hidden" name="form_id" value="2">
+                        <input type="hidden" name="frm_hide_fields_2" id="frm_hide_fields_2" value="">
+                        <input type="hidden" name="form_key" value="footer-signup">
+                        <input type="hidden" name="item_meta[0]" value="">
+                        <input type="hidden" id="frm_submit_entry_2" name="frm_submit_entry_2" value="af2626590a">
+                        <input type="hidden" name="_wp_http_referer" value="/">
+                        <div id="frm_field_8_container" class="frm_form_field form-field frm_required_field frm_top_container frm_full frm_blank_field">
+                          <label for="field_29yf4d2" id="field_29yf4d2_label" class="frm_primary_label"> <span class="frm_required" aria-hidden="true">*</span> </label>
+                          <input type="email" id="field_29yf4d2" name="item_meta[8]" value="" placeholder="Your email address" data-reqmsg="Please enter your Email address" aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false">
+                        </div>
+                          <div class="frm_submit-btn">
+                        <div class="frm_submit frm_flex">
+                          <button class="frm_button_submit frm_final_submit" type="submit" formnovalidate="formnovalidate">Submit</button>
+                        </div></div>
+                        <input type="hidden" name="item_key" value="">
+                        <input name="frm_state" type="hidden" value="i3l6EXhA5ovhm4lH/jrINvJ7qc7BJpIKcLPe+EcZTrI=">
+                      </div>
+                    </fieldset>
+                  </div>
+                </form>
+              </div>
+              <div class="disclaimer">A short disclaimer about privacy can appear here if necessary.</div>
+            </div>
+          </div>
+          <!-- end of signup rt --> 
+        </div>
+        <!-- end of signup wrap --> 
+      </div>
+    </section>
+
+    </main>
+
+
+
+    <footer id="main_footer">
+      <div class="footer pos-relative">
+        <div class="container">
+          <div class="footer-vector pos-absolute">
+            <figure class="object-fit">
+              <img src="images/brand-icon.svg" alt="footer vector" />
+            </figure>
+          </div>
+          <div class="footer-top">
+            <div class="footer-tp-wrap flex">
+              <div class="footer-location">
+                <h6>Location</h6>
+                <p>123 Streetname BoulevardCityname, Ontario M5M 5M5</p>
+              </div>
+              <div class="footer-phone">
+                <h6>Call Us</h6>
+                <p>Studio / Contest Line:<strong> (905) 688-9797</strong></p>
+                <p>
+                  Toll Free Studio / Contest Line:<strong>
+                    1 (877) 977-4977</strong>
+                </p>
+                <p>Reception:<strong> (905) 688-0977</strong></p>
+              </div>
+              <div class="footer-tp-rt">
+                <div class="app-download">
+                  <h6>Download Our App</h6>
+                  <div class="ft-app-wrap flex flex-center">
+                    <a href="#" class="ft-app-link flex flex-vcenter">
+                      <div class="ft-app-lt">
+                        <figure class="object-fit">
+                          <img src="images/apple.svg" alt="Apple" />
+                        </figure>
+                      </div>
+                      <div class="ft-app-txt">
+                        <span class="ft-tp-txt">Download on the</span>
+                        <span class="ft-bt-txt">App Store</span>
+                      </div>
+                    </a>
+                    <a href="#" class="ft-app-link flex flex-vcenter">
+                      <div class="ft-app-rt">
+                        <figure class="object-fit">
+                          <img src="images/google-play.svg" alt="Google Play" />
+                        </figure>
+                      </div>
+                      <div class="ft-app-txt">
+                        <span class="ft-tp-txt">Get it on</span>
+                        <span class="ft-bt-txt">Google Play</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="follow-links">
+                  <h6>FOLLOW US</h6>
+                  <ul class="flw-links flex">
+                    <li>
+                      <a href="" class="flex flex-center">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="flex flex-center">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="flex flex-center">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="footer-cp-rights flex">
+              <p>
+                Copyright © 2025 Whiteoaks Communications Group Ltd. All
+                Rights Reserved.
+              </p>
+              <div class="privacy-links">
+                <ul>
+                  <li><a href="#">Political Ad Registry</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Accessibility Policy</a></li>
+                </ul>
+              </div>
+              <!-- end of privacy links -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-sticky">
+        <div class="container">
+          <div class="footer-bottom flex flex-vcenter">
+            <div class="ft-btm-left flex flex-vcenter pos-relative">
+              <div class="ft-btm-lt-img">
+                <figure class="object-fit">
+                  <img src="images/ft-host-thumb@2x.jpg" alt="ft-host-thumb" />
+                </figure>
+              </div>
+              <div class="ft-btm-rt-con">
+                <div class="ft-btm-txt flex flex-vcenter">
+                  <div class="ft-speaker-icon">
+                    <figure class="object-fit">
+                      <img src="images/speaker-icon.svg" alt="speaker-icon" />
+                    </figure>
+                  </div>
+                  <span>On air until 2:00pm</span>
+                </div>
+                <h6>Host/Show Name</h6>
+              </div>
+            </div>
+            <div class="ft-btm-mid pos-relative">
+              <div class="ft-btm-vec pos-absolute">
+                <figure class="object-fit">
+                  <img src="images/ft-wavefm.svg" alt="" />
+                </figure>
+              </div>
+              <div class="ft-btm-live flex flex-vcenter">
+                <a href="" class="ft-btm-play flex flex-vcenter">
+                  <i class="fa-sharp fa-solid fa-play" aria-hidden="true"></i>
+                </a>
+                <span>LISTEN LIVE</span>
+              </div>
+            </div>
+            <div class="ft-btm-right flex flex-vcenter pos-relative">
+              <div class="ft-btm-rt-thumb">
+                <figure class="object-fit">
+                  <img src="images/footer-thumb-one@2x.jpg" alt="ft-wavefm" />
+                </figure>
+              </div>
+              <div class="ft-btm-rt-thumb">
+                <figure class="object-fit">
+                  <img src="images/footer-thumb-two@2x.jpg" alt="ft-wavefm" />
+                </figure>
+              </div>
+              <div class="ft-btm-rt-thumb">
+                <figure class="object-fit">
+                  <img src="images/footer-thumb-three@2x.jpg" alt="ft-wavefm" />
+                </figure>
+              </div>
+              <div class="ft-btm-rt-thumb pos-relative">
+                <figure class="object-fit">
+                  <img src="images/footer-thumb-four@2x.jpg" alt="ft-wavefm" />
+                </figure>
+                <a class="see-all-wrap pos-absolute flex flex-vcenter" href="#">
+                  <div class="see-all">See All</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 2.33398C6.47715 2.33398 2 6.81113 2 12.334C2 17.8568 6.47715 22.334 12 22.334C17.5228 22.334 22 17.8568 22 12.334C22 6.81113 17.5228 2.33398 12 2.33398ZM8.0002 13.634C8.71817 13.634 9.3002 13.0519 9.3002 12.334C9.3002 11.616 8.71817 11.034 8.0002 11.034C7.28223 11.034 6.7002 11.616 6.7002 12.334C6.7002 13.0519 7.28223 13.634 8.0002 13.634ZM16.0002 13.634C16.7182 13.634 17.3002 13.0519 17.3002 12.334C17.3002 11.616 16.7182 11.034 16.0002 11.034C15.2822 11.034 14.7002 11.616 14.7002 12.334C14.7002 13.0519 15.2822 13.634 16.0002 13.634ZM12.0002 13.634C12.7182 13.634 13.3002 13.0519 13.3002 12.334C13.3002 11.616 12.7182 11.034 12.0002 11.034C11.2822 11.034 10.7002 11.616 10.7002 12.334C10.7002 13.0519 11.2822 13.634 12.0002 13.634Z"
+                      fill="white"></path>
+                  </svg>
+                  <!-- <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                </div> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer_btm -->
+  </div>
+  <!-- end of main -->
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="css/slick.css" media="all" />
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom-slick.js"></script>
+  <script src="js/date-slick.js"></script>
+  <script src="js/custom-script.js"></script>
+
+</body>
+
+</html>

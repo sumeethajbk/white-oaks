@@ -36,11 +36,24 @@ ul.show-links li a:hover i { color: var(--white); }
 
 }
 
+
 @media only screen and (max-width: 1023px) and (min-width: 200px){
 .show-detail-main {display: block;}
 .show-detail-rt {display: flex; justify-content: space-between; }
 .ad-300{width: 300px;}
 
+
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.show-detail-auth-list {display: block;}
+.show-detail-auth-img { flex: 0 0 240px; height: 220px; width: 220px; margin: 0 auto 46px;}
+.show-detail-main { padding: 40px 0 40px;}
+.show-detail-rt{display: block;}
+ .ad-300 {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;}
 
 
 }
