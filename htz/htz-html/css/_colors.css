@@ -74,6 +74,16 @@
     --filter-border:rgba(0, 8, 117, 0.25);
     --filter-atxt:#000000;
     
-    --input:rgba(255, 255, 255, 0.25);;
+    --input:rgba(255, 255, 255, 0.25);
+    --optional-grey: rgb(255 255 255 / 50%);
+    --frm-txt: #ffffff;
+    --input-txt:#ffffff;
+    --frm-btn-hover:#f50000;
+    
+    --cd-txt:#ffffff;
+    --cd-a:#f50000;
+    --cd-ahover:#ffffff;
+    
+    --theme-bg:#000000; 
     
 }

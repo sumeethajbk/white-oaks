@@ -199,15 +199,15 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display: block;}
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top: auto; bottom: -17px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
-.frm_forms .frm_form_fields .frm_form_field{margin-bottom:20px; position: relative; clear: both;}
+.frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
 
-.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.4; padding: 0; text-indent: inherit; font-weight: normal; color: var(--base-foreground); z-index: 1;}
-.frm_forms .frm_form_fields .frm_form_field label.frm_primary_label{display: none;}
+.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.5; padding: 0 0 4px 0; margin: 0; text-indent: inherit; font-weight: normal; color: var(--frm-txt); z-index: 1; position: relative;}
+
 
 /* Radio */
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio .frm_error {right: inherit !important; left: 0; text-align: left !important; top: inherit; margin-top: 6px;}
-.frm_forms.with_frm_style .frm_form_fields .frm_form_field input[type="radio"] {position: absolute; left: 0; width: 20px; height: 20px; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--brand-green)!important; border: 0 none !important;}
+.frm_forms.with_frm_style .frm_form_fields .frm_form_field input[type="radio"] {position: absolute; left: 0; width:16px; height:16px; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--input)!important; border: 0 none !important;}
 .frm_forms.with_frm_style .frm_radio input[type="radio"]::before {box-shadow: inset 10px 10px var(--white); content: ''; display: block; width: 8px; height: 8px; border-radius: 50%; left: 0; top: 0; position: absolute; bottom: 0; right: 0; margin: auto;}
 .frm_forms.with_frm_style .frm_radio {margin: 0 0 5px 0;}
 .frm_forms.with_frm_style .frm_radio label {padding-left:28px; display:block; cursor: pointer;}
@@ -215,49 +215,42 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 
 /* Checkbox */
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {position: absolute; left: 0; width: 20px!important; height: 20px!important; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--cerulean)!important; border: 0 none !important; top: -1px;}
-.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before { content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: block; height: 20px; left: 0px; position: absolute; top: 0; width: 20px; font-weight: 900; color: var(--white); font-size: 10px; transform: none; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; line-height: 20px;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {position: absolute; left: 0; width: 16px!important; height: 16px!important; cursor: pointer;  outline: none!important; -moz-border-radius:4px; -webkit-border-radius: 4px;  border-radius: 4px; padding: 0 !important; background: var(--input)!important; border: 0 none !important; top:4px; box-shadow: none!important;}
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before { content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: flex; height:16px; left: 0px; position: absolute; top: 0; width: 16px; font-weight: 900; color: var(--input-txt); font-size: 10px; transform: none; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; line-height: 16px; justify-content: center;}
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none; background-image: none!important;}
-.frm_forms.with_frm_style .frm_checkbox label {padding-left:28px; display:block; cursor: pointer;}
+.frm_forms.with_frm_style .frm_checkbox label {padding-left:24px; display:block; cursor: pointer; padding-bottom: 0;}
+.frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked {background: var(--input)!important; border: 0 none !important;}
 
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "Inter", sans-serif; font-weight: bold; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: transparent!important; color: var(--white)!important; border:1px solid var(--brand-green)!important; padding:14px 16px 14px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0;}
-.frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "Inter", sans-serif; font-weight: normal; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input)!important; color: var(--input-txt)!important; border:0 none!important; padding:15px 16px; width: 100%; box-shadow: none!important; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius:50px;}
+.frm_forms .frm_form_fields textarea {min-height:150px; padding:15px 16px; border-radius: 40px;}
 
-.frm_forms .frm_form_fields textarea {min-height:160px; padding: 17px;}
-
-.frm_forms .frm_form_fields .selectBox-dropdown{background-color: transparent; color: var(--brand-green); border:solid 1px var(--brand-green); padding:14px 46px 14px 16px; font-family: "Inter", sans-serif; font-weight: 700; text-transform: none;}
-.frm_forms .frm_form_fields .selectBox-dropdown:focus, .frm_forms .frm_form_fields .selectBox-dropdown:hover {}
 
 
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--fm-btn-bg)!important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--fm-btn-txt)!important; font-family: "Inter", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px; width: 100%!important; border-radius: 50px !important; border: 0 none !important;}
-body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {background-color: var(--fm-btnbg-hover)!important;}
+body .frm_style_formidable-style.with_frm_style .frm_submit .button, body .frm_style_formidable-style.with_frm_style .frm_submit button {display: inline-flex; font-size:1rem; font-weight:600; line-height: 1.5; letter-spacing:normal; padding:15px 20px 17px; vertical-align: middle; cursor: pointer; border:0 none!important; background-color: var(--btn-bg); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--btn-txt); font-family: "Inter", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:50px; outline: 0; box-sizing: border-box; gap:14px; align-items: center; justify-content: center; box-shadow: none; min-width: 150px; margin: 0;}
+body .frm_style_formidable-style.with_frm_style .frm_submit .button:after, body .frm_style_formidable-style.with_frm_style .frm_submit button:after {display: none;}
+body .frm_style_formidable-style.with_frm_style .frm_submit .button:hover, body .frm_style_formidable-style.with_frm_style .frm_submit button:hover, body .frm_style_formidable-style.with_frm_style .frm_submit button:focus {background-color: var(--frm-btn-hover)!important;}
 
 
-.frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between; flex-direction: row-reverse;}
-.frm_forms .frm_filed_wrapper .frm_form_field {margin: 0!important;}
-.frm_forms .frm_filed_wrapper .disclaimer {opacity: 0.45; color: var(--base-foreground);}
-.frm_forms .frm_filed_wrapper .frm_html_container {font-size: 1rem; line-height: 1.4; text-align: right;}
-body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_other_full) {width: 100%; margin-top: 5px;}
+.frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between; display: flex; flex-wrap: wrap; align-items: center;}
+.frm_forms .frm_filed_wrapper .frm_form_field, .frm_forms .frm_filed_wrapper .frm_checkbox {margin: 0!important;}
+.frm_forms .frm_filed_wrapper .disclaimer {width: 70%;}
 
 /* Form Field */
 .form-field {position:relative; margin-bottom:20px;}
-.frm_half {width:calc(50% - 10px); float: left; clear: none!important;}
+.frm_half {width:calc(50% - 20px); float: left; clear: none!important;}
 .frm_first {margin-right:20px;}
 .frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
 
 /* Success Message */
 .frm_forms .frm_error_style {display: none;}
-.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 20px 0 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
-.frm_forms .frm_message p {color: var(--base-foreground); text-align: center; font-size: 1rem; line-height: 1.5; margin-bottom: 0;}
-
-.default_form {background: var(--white); clear: both; width:100%; padding: 40px 64px 64px 40px; clip-path: var(--path-24);}
-.default_form .frm_forms .frm_filed_wrapper .frm_html_container {width: calc(100% - 110px);}
+.frm_forms .frm_message, .frm_forms .frm_success_style {margin:0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5; color: var(--theme)}
+.frm_forms .frm_message p {color: var(--theme); text-align: center; font-size: 1rem; line-height: 1.5; margin-bottom: 0;}
 
 /*-- common form css ends here --*/
 
@@ -371,10 +364,16 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
     .container {padding:0 16px; max-width:100%;}
     .hide-in-mobile {display:none;}
     
-
+    .frm_forms .frm_filed_wrapper {padding: 4px 0 0 0; gap: 32px;}
     .frm_forms .frm_submit {width: 100%;}
     .frm_half {width:100%; margin-left: 0; margin-right: 0;} 
+    .frm_forms .frm_filed_wrapper .disclaimer {width: 100%;}
+    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 20px;}
     
+    .frm_forms.with_frm_style .frm_checkbox label {padding-left: 48px;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 32px!important; height: 32px!important; -moz-border-radius: 8px !important; -webkit-border-radius: 8px !important;
+  border-radius: 8px !important;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {font-size: 20px; line-height: 32px;}
     
     .heading-lt {width: 100%;}
     .heading-rt {justify-content: flex-start; width: 100%;}
@@ -393,7 +392,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
     
     .fluid-width {width: 100%!important; left: 0; margin-left: 0;}
     .btn-full {width: 100%;}
-    
+    .btn-full button {width: 100%!important;}
 }
 
 

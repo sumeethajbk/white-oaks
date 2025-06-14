@@ -6,7 +6,7 @@
 .contests-container {width: 100%; padding:40px 0 80px 0; clear: both;}
 .contest-main {clear: both; width: 100%; position: relative; display: flex; flex-wrap: wrap; gap:32px 4.6875%;}
 .contest-main .btn-center {margin: 40px 0 0 0;}
-.contest-main .brand-icon {right: 0; bottom: 0;}
+.contest-main .brand-icon {right: -43px; bottom: -30px;}
 
 .contests-lists {gap:40px 4.3478260869565215%;}
 .contest-grid {display: inline-block; width:30.434782608695656%; vertical-align: top;}
@@ -48,6 +48,7 @@
     .contests-container {padding: 40px 0;}
     /* contest Lists */
     .contest-main {gap:44px;}
+    .contest-main .brand-icon {right: 0; bottom: -30px; left: -125px; z-index: -1;}
     .contest-grid {width: 100%;}
     .contest-grid .contest-thumb {height:41.88vw;}
     .contest-grid .contest-cnt {padding: 8px 0 0 0;}
@@ -56,6 +57,7 @@
     .contest-lists {padding: 0 0 68px 0; margin: 0 0 37px 0;}
     
     .contest-grid .contest-cnt .posted-date.big {font-size:0.75rem; font-weight: bold; line-height: 1; opacity: 1;}
+    
     
 
     
