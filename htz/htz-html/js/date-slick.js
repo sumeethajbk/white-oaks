@@ -1,4 +1,6 @@
 jQuery(document).ready(function () {
+
+
   let media = window.matchMedia("(min-width: 768px)");
 
   function wrapGroups() {

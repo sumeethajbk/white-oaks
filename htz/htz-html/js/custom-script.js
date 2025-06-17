@@ -19,7 +19,7 @@ jQuery(document).ready(function () {
     
   /* Menu */
 
-  if (jQuery(window).width() <= 809) {
+  if (jQuery(window).width() <= 1023) {
     jQuery(".toggle_button").on("click", function (event) {
       event.preventDefault();
       jQuery(this).toggleClass("active");

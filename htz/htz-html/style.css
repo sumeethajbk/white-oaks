@@ -19,7 +19,7 @@ Text Domain:Whiteoaks
 
 
 /*-- customized styles starts here --*/
-body {font-family: "Inter", sans-serif; color:var(--body-text); font-size:1.125rem; line-height:1.5; font-weight:400; font-optical-sizing: none; font-style:normal; overflow-x:hidden; background:var(--black); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch;}
+body {font-family: "Inter", sans-serif; color:var(--body-text); font-size:1.125rem; line-height:1.5; font-weight:400; font-optical-sizing: none; font-style:normal; overflow-x:hidden; background:var(--black-bg); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch;}
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
 #mainContent {clear:both; position:relative; float:left; width:100%; padding: 82px 0 0 0;}
 .container {max-width:1280px; margin:0 auto; width:100%;}

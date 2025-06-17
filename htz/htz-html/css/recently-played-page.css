@@ -3,7 +3,7 @@
 @import url("_signup-module.css");
 
 .default-banner-section{background-color: var(--recent-banner-bg);}
-.default-banner-section .banner-bg{width: 1112px; right: 0; left: auto;}
+.default-banner-section .banner-bg{width: 1112px; right: 0; left: auto; top: -33px;}
 .default-banner-section .banner-bg img{object-fit: contain;}
 .default-banner-section .banner-bg:after{background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);}
 .default-banner-text h1{font-size: 3rem;}
@@ -23,7 +23,7 @@
 .recently-played-lt .ad-sm{margin: 40px auto;}
 .btn-center{margin: 20px 0 60px;}
 
-
+.recently-played-rt .brand-icon{bottom: -40px; right: 0;}
 
  @media only screen and (max-width: 1279px) and (min-width: 1024px){
     .recently-played-main{gap: 20px;}
@@ -39,13 +39,13 @@
     .recently-played-main{display: block;}
     .recently-played-lt{flex: 0 0 100%;}
     .recently-played-rt{flex: 0 0 100%;}
-     .blc-one .h4{font-size: 1.5rem;}
+    .blc-one .h4{font-size: 1.5rem;}
     .blc-three .h4{font-size: 1.5rem;}
     .recently-played-rt{display: flex; justify-content: space-between;}
     .recently-played-rt .ad-300{width: 300px; height: 250px;}
 
     .default-banner-main {min-height: 420px;}
-    .default-banner-section .banner-bg { width: inherit; top:-82px}
+    .default-banner-section .banner-bg { width: inherit; top: -63px;}
     .default-banner-text h1 {font-size: 2.375rem;}
     .default-banner-main .default-banner-text { padding: 40px 0 32px;}
     .default-banner-main .default-banner-text p { font-size: 1.125rem;}
@@ -55,9 +55,25 @@
  }
 
  @media only screen and (max-width: 767px) and (min-width: 200px){
-   .blc-two { width: 80px; height: 80px; order: 1; }
-    .blc-one{order: 2; display: flex; flex: inherit;}
-    .blc-three{order: 3}
+   
+   .blc-two { width: 80px; height: 80px; }
+   .blc-one.hide-in-desktop{order: 2; display: flex; flex: inherit; justify-content: space-between; align-items: center;}
+   .blc-three .h4 { margin-bottom: 0; }
+   .blc-one > .h4{font-size: 1.125rem;}
+   .blc-three .h4 { font-size: 1.625rem; }
+  
+   .blc-one .optional-text{margin-bottom: 0;}
+   .recently-played-list { gap: 20px;}
+   .default-banner-section .brand-icon{top: -36px;}
+   .recently-played-rt .brand-icon{bottom: 300px;}
+   .recently-played-lt .ad-sm { margin: 60px auto; }
+   .btn-center { margin: 60px 0 40px; }
+   .recently-played-rt .ad-300{display: none;}
+
+   .recently-played-main{margin: 40px 0 0;}
+   .default-banner-text svg{margin-bottom: 16px;}
+
+     .fce-module { padding: 0 0 40px; } 
 
 
  }

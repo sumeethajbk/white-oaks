@@ -1,4 +1,4 @@
-.main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 999; transition: .3s ease-in-out; background: var(--black);}
+.main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 999; transition: .3s ease-in-out; background: var(--black-bg);}
 .main_header .container {position: relative;}
 .main_header .header {padding:16px 0 3px;}
 .main_header .logo {width: 140px; position: relative;}
@@ -54,9 +54,9 @@
     ul.main_menu > li.current-menu-item > a:after, 
     ul.main_menu > li.current-menu-parent > a:after, 
     ul.main_menu > li.current-page-ancestor > a:after, 
-    ul.main_menu > li.current_page_item > a:after{bottom: 0; padding: 0 8px; height: 6px;}
+    ul.main_menu > li.current_page_item > a:after{bottom: -2px; padding: 0 8px; height: 6px;}
 
-        ul.main_menu > li.current-menu-item > a:before, 
+    ul.main_menu > li.current-menu-item > a:before, 
     ul.main_menu > li.current-menu-parent > a:before, 
     ul.main_menu > li.current-page-ancestor > a:before, 
     ul.main_menu > li.current_page_item > a:before{background-color: var(--menu-bg); padding: 14px 8px 30px; content: '';
@@ -66,7 +66,7 @@
     height: 2px;
     transition: width .5s ease, background-color .5s ease;
     left: 50%;
-    transform: translate(-50%, 0); width: 100%; z-index: -1; top: -18px; height: 34px }
+    transform: translate(-50%, 0); width: 100%; z-index: -1; top: -18px; height: 37px }
 }
 
 
@@ -81,8 +81,8 @@
     .main_header .header-btm {gap:24px;}
     
     
-    ul.main_menu > li {margin-left: 20px;}
-    ul.main_menu > li > a {padding: 10px 0 26px;}
+    /* ul.main_menu > li {margin-left: 20px;} */
+    /* ul.main_menu > li > a {padding: 10px 0 26px;} */
     ul.main_menu > li > a::after {bottom: 22px;}
 }
 
@@ -93,34 +93,34 @@
     .main_header .header {padding: 16px 0 12px; min-height: 82px;}
 
     .main_header .logo {width: 135px;}
-    .main_header .header-btm {position: relative; display: flex; clear: both; align-items: flex-start; justify-content: flex-start; gap:0; margin: 0;}
+    .main_header .header-btm {position: relative; display: flex; clear: both; align-items: flex-start; justify-content: flex-start; gap:0; margin: 0; background-color: var(--black-bg);}
 
-    .main_header .header_right.mobile_menu {display: flex; width: 100%; height: calc(100% - 64px); top: 64px; left: 0; bottom: 0; position: fixed; background: var(--white); overflow-y: auto; -webkit-overflow-scrolling: touch; transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; z-index: 100001; opacity: 0; visibility: hidden; margin: 0; text-align: left; overflow-x: hidden; align-items: flex-start;}
+    .main_header .header_right.mobile_menu {display: flex; width: 100%; height: calc(100% - 64px); top: 82px; left: 0; bottom: 0; position: fixed; background: var(--black-bg); overflow-y: auto; -webkit-overflow-scrolling: touch; transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; z-index: 100001; opacity: 0; visibility: hidden; margin: 0; text-align: left; overflow-x: hidden; align-items: flex-start;}
     .main_header .header_right.navOpen {opacity: 1; visibility: visible;}
     
     
     .main_header .header .toggle_button {position: absolute; flex-direction: column; width: 50px; right: 16px; height: 50px; cursor: pointer; top: -3px; bottom: 0; margin: auto; display: block; background-color: var(--theme); border-radius: 50%;} 
-    .main_header .header .toggle_button span.line {width: 18px; height: 2px; margin: 0 auto; background-color: var(--white); display: block; position: absolute; top: 50%; transform: translateY(-50%); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; margin-left: 16px; border-radius: 2px;} 
+    .main_header .header .toggle_button span.line {width: 18px; height: 2px; margin: 0 auto; background-color: var(--white); display: block; position: absolute; top: 50%; transform: translateY(-50%); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; margin-left: 15px; border-radius: 2px;} 
     .main_header .header .toggle_button span.line2 {margin-top: 6px; width: 9px} 
     .main_header .header .toggle_button span.line1 {margin-top: -6px;} 
-    .main_header .header .toggle_button.active {width: 28px; background-image: none; z-index: 10001;} 
-    .main_header .header .toggle_button.active span.line {width: 28px; display: block; height: 2px; background-color: var(--optionaltxt);  top: 50%; position: absolute; transform: translateY(-50%); left: 0; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;} 
-    .main_header .header .toggle_button.active span.line1 {margin-top: 0; transform: translateY(-50%) rotate(45deg);} 
+    .main_header .header .toggle_button.active {width: 50px; background-image: none; z-index: 10001;} 
+    .main_header .header .toggle_button.active span.line {width: 20px; display: block; height: 3px; background-color: var(--optionaltxt);  top: 50%; position: absolute; transform: translateY(-50%); left: 0; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;} 
+    .main_header .header .toggle_button.active span.line1 {margin-top: 0; transform: translateY(-50%) rotate(45deg); background-color: var(--white);} 
     .main_header .header .toggle_button.active span.line2 {visibility: hidden; opacity: 0;} 
-    .main_header .header .toggle_button.active span.line3 {margin-top: 0; transform: translateY(-50%) rotate(-45deg);} 
+    .main_header .header .toggle_button.active span.line3 {margin-top: 0; transform: translateY(-50%) rotate(-45deg); background-color: var(--white)} 
 
    
     .mobile_menu {width: 100%; display: block; order: 2;} 
-    .mobile_menu ul.main_menu {margin: 0; padding:0;} 
-    .mobile_menu ul.main_menu > li {display: block; margin:0; border-bottom: 1px solid var(--greyline);} 
-    .mobile_menu ul.main_menu li.menu-item-has-children > a {padding-right: 50px;}
-    .mobile_menu ul.main_menu li.menu-item-has-children > a:after {content: "\f107"; font-family: 'Font Awesome 6 Pro'; font-weight: 300; font-size:28px; display: inline-block; right: 20px; top: 10px; transform: none; margin: auto; position: absolute; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--heading);} 
+    .mobile_menu ul.main_menu {margin: 0; padding:0; padding-bottom: 90px;} 
+    .mobile_menu ul.main_menu > li {display: block; margin:0;} 
+    
     .mobile_menu ul.main_menu li.menu-item-has-children > a.active:after {transform: rotate(-180deg)}
     .mobile_menu ul.main_menu li.menu-item-has-children > a.active {font-weight: bold;}
     
     .mobile_menu ul.main_menu li:before {display: none;} 
-    .mobile_menu ul.main_menu > li >a {font-size: 1.25rem; padding:13px 20px 13px 20px; cursor: pointer; color: var(--heading); position: relative; display:block; font-weight: bold;} 
-    .mobile_menu ul.main_menu > li a:hover {color: var(--green);} 
+    .mobile_menu ul.main_menu > li >a {font-size: 1.125rem; padding:14px 20px 14px 24px; cursor: pointer; color: var(--heading); position: relative; display:block; font-weight: bold; border-left: 16px solid transparent; letter-spacing: -0.36px;} 
+    .mobile_menu ul.main_menu > li a:hover, .mobile_menu ul.main_menu > li a:active  {background-color: var(--menu-hover-bg);  border-left: 16px solid var(--menu-line); padding-left: 24px;}
+
 
 
     .mobile_menu ul.main_menu > li > ul {display: none; margin: 0; position: relative; padding: 0; background: var(--input); border-top: 1px solid var(--green); border-bottom: 1px solid var(--green);} 
@@ -131,27 +131,14 @@
     .mobile_menu ul.main_menu li.flex-menu .menu-1-of-4 > ul {display: block!important;}
     .mobile_menu ul.main_menu li.menu-btn a {font-size: 1.125rem; font-weight: bold; color: var(--heading);}
     .mobile_menu ul.main_menu li.menu-btn a:hover {color: var(--green);}
-    
-    .hdr-sm {clear: both; font-size: 0; display: block; order: 3; width: 100%; padding: 20px; text-align: center;}
-    .hdr-sm ul {margin: 0;}
-    .hdr-sm ul li {display: inline-block; margin: 0 0 0 17px;}
-    .hdr-sm ul li:first-child {margin-left: 0;}
-    .hdr-sm ul li a {font-size: 1.25rem; color: var(--white); width: 56px; height: 56px; position: relative; z-index: 1; line-height: 1; border-radius: 50%; background-color: var(--heading);}
-    .hdr-sm ul li a:hover {background-color: var(--green); color: var(--blacktext);}
-    
+
     html.no-scroll {overflow: hidden;}
     
 }
 
 
 @media only screen and (max-width:1023px)and (min-width:720px) {
-    /* .main_header .logo {width: 168px;}
-    .main_header .header .toggle_button {width: 35px; right: 40px; height: 35px; top: 0px;}
-    .main_header .header .toggle_button span.line1 {margin-top: -13px;}
-    .main_header .header .toggle_button span.line2 {margin-top: 13px;}
-    .main_header .header .toggle_button span.line {width: 35px; height: 3px; border-radius: 2px;} */
-    .main_header .header .toggle_button.active {width: 35px;}
-    /* .main_header .header .toggle_button.active span.line {width: 35px; height: 3px;} */
+   
     
     .main_header .header_right.mobile_menu {top: 68px;}
     
