@@ -59,7 +59,7 @@
    .blc-two { width: 80px; height: 80px; }
    .blc-one.hide-in-desktop{order: 2; display: flex; flex: inherit; justify-content: space-between; align-items: center;}
    .blc-three .h4 { margin-bottom: 0; }
-   .blc-one > .h4{font-size: 1.125rem;}
+   .blc-one > .h4{font-size: 1.125rem!important;}
    .blc-three .h4 { font-size: 1.625rem; }
   
    .blc-one .optional-text{margin-bottom: 0;}
